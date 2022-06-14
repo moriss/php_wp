@@ -1,3 +1,12 @@
+14 june 22
+Associative array.
+This took me a while to figure out. Make sure you have a comma between key-value pairs.
+<?php 
+$tifl = array("first" =>"green" , "second" =>"blue" , "third"=>"purple");
+echo ($tifl["first"]);
+?>
+
+
 There is a difference between writing an array (use curly brackets) and accessing a specific array index (use square brackets).
 $nen = array("blue", "Green", "yello");
 echo $nen[2];
