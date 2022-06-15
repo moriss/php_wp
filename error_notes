@@ -1,3 +1,8 @@
+15 June 22
+print_r and var_dump requires brackets
+print_r ("<br/>");
+
+
 14 june 22
 Associative array.
 This took me a while to figure out. Make sure you have a comma between key-value pairs.
