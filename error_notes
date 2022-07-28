@@ -1,3 +1,10 @@
+28th july 22
+Generaly speaking, actions requre {} braces whilst conditions require () braces.
+{  ;}   and (  );
+Do this {  ;}  while (this is true) ;
+Please note position of semi colon being inside for {} and outside for ()
+
+
 27 July 22
 Where you combine greater than and equal to operators, you need to NOT have spaces in between.
 Example
