@@ -3,6 +3,10 @@ Generaly speaking, actions requre {} braces whilst conditions require () braces.
 {  ;}   and (  );
 Do this {  ;}  while (this is true) ;
 Please note position of semi colon being inside for {} and outside for ()
+On the other hand: No semi colon required after the condition
+while (){
+
+;}
 
 
 27 July 22
