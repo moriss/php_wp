@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GTCoding</title>
+	<link rel="stylesheet" type="text/css" href="syle.css" >
+
+</head>
+<body>
+
+	<header>
+		<h1>GtCoding</h1>
+		<ul>
+			<li><a href="index.php" >Page 1 </a></li>
+			<li><a href="page2.php" >Page 2 </a></li>
+		
+		</ul>
+	</header>
+	<h4 class="page1">Page 1</h4>
+	<footer>
+		<p>this website is created by GtCoding </p>
+	</footer>
+</body>
+
+
+
+
+</html>
