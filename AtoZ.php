@@ -10,6 +10,7 @@ Code based on this course:  https://www.youtube.com/watch?v=KibbYf9avko&t=43s
 #concatination #conditional statements #boolean,  #arrays  ,    #printing methods STOPPED HERE,
 #access index value of array. #associative array
 
+
 #work area################################# 1.30.13 in 7 June 22
 echo "<br/>";echo "<br/>";echo "<br/>";
 echo "<h1>Work area###</h1> <br/>";
