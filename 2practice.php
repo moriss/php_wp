@@ -1,4 +1,4 @@
-This is an original variation to what is on the AtoZ.php file. Refer to AtoZ.php from now on.
+This is an original variation to what is on the AtoZ.php file and can be worked through in its own right.
 
 <!DOCTYPE html>
 <html>
