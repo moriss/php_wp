@@ -1,3 +1,5 @@
+This is an original variation to what is on the AtoZ.php file. Refer to AtoZ.php from now on.
+
 <!DOCTYPE html>
 <html>
  <head>
