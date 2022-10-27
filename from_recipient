@@ -1,7 +1,7 @@
 ####################
 #below file named dashboard.php
 <?php
-$userId = $_POST["useid"];
+$userId = $_POST["userid"];
 $passWord = $_POST["password"];
 if($userId == "morris" && $passWord == "dani5012") {
 	echo "<h1>welcome, $userId </h1>";
@@ -13,9 +13,10 @@ if($userId == "morris" && $passWord == "dani5012") {
 #######################
 
 Below gets sent to above
+Below happens to be called from.php
 ##########
 <form action="dashboard.php" method="post"> 
-<input type="text" name="useid">
+<input type="text" name="userid">
 <input type="password" name="password">
 <input type="submit" value="login">
 </form>
