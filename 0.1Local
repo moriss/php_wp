@@ -1,0 +1,12 @@
+Building a wordpress site with local
+
+Open local
+Bottom left plus sign to start new site
+Name the site and leave Advanced Options for now
+Click continue and keep as preferred setting. 
+click continue again
+choose "admin" for both Username and password. It''s local so doesn't need to be strong
+Leave wp email as default
+click on "Add Site"
+
+You needed to type your ubuntu password to allow local to add and install wordpress
