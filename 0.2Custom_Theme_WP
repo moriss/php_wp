@@ -1,17 +1,44 @@
+Below is from https://www.youtube.com/watch?v=KibbYf9avko&t=43s tutorial
+Approximately 2 hours in
+
 Open Local
 Select Admin
 Enter Username and Password (admin, admin)
 
-Hover over site name (tope right) and select View Site
+On the Admin page, hover over site name (tope right) and select View Site
 
 To view all current themes, click on 
 Appearance>Themes
 
-Here, you can select and activate different themes for your site
+Here, you can select and 'Activate' different 'Themes' for your site
 
 Our next goal is to create our own new theme.
 
+@@@@@@@@@@@@@@@@@@@@@@@@@@
 Incidental: Adding a new post.
-Select Posts in Admin>Add New
-By default, when you select Publish, it will show on the home page. 
+Select 'Posts' in Admin>Add New
+Go ahead and create a new post.
+By default, when you select 'Publish', it will show on the home page. 
+
+Incidental: Adding a new Plugin:
+click on Plugins>add new
+'Contact form 7' is the plugin installed in the tuturial.
+By Hovering over 'Contact' (Left column of Admin Page) then selecting 'Contact Froms', will take you to this newly installed plugin. 
+
+To change the 'Title' and 'Tag line':
+Open settings>general to then edit these and other settings.
+@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+It's now time to add your own custom theme: (The GT Coding  site you created in this tutorial)
+Go to Local then choose the site title (left column), right click>Go to site folder
+You may have to click 'Go to site folder' again below the title at the top of the page.
+Incidentally, the filepath for your site files in this instance is home>gtcoding>files are here.
+app>public takes you to all the necessary files.
+Then
+wp-content>themes, shows all current themes
+
+Create a new folder nameing it GTCoding
+
+You can see the new theme in Dashboard>Appearance>Themes  Under 'Broken Themes'
+
 
