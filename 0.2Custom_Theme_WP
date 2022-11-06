@@ -32,13 +32,40 @@ Open settings>general to then edit these and other settings.
 It's now time to add your own custom theme: (The GT Coding  site you created in this tutorial)
 Go to Local then choose the site title (left column), right click>Go to site folder
 You may have to click 'Go to site folder' again below the title at the top of the page.
-Incidentally, the filepath for your site files in this instance is home>gtcoding>files are here.
+
+Incidentally, the filepath for your site files in this instance is home>local sites>gtcoding>app>public>wp-content>themes>gtcoding. files are here.
 app>public takes you to all the necessary files.
 Then
 wp-content>themes, shows all current themes
 
 Create a new folder nameing it GTCoding
+(You can see the new theme in Dashboard>Appearance>Themes  Under 'Broken Themes')
 
-You can see the new theme in Dashboard>Appearance>Themes  Under 'Broken Themes'
+Create a new file called style.css (I did this from the terminal window)
+Type the following in the css file (within comments). **
+Theme: GTCoding
+Author: Maurizio Marrocco
+Author URI:
+Description:The official theme for GTCoding
+Version: 1
+**/
+The above details will be displayed when you click on 'Appearance>Themes>Theme Details'.
+
+Create a new file called index.php (I did this from the terminal window)
+(Write some html in the index.php file and open it in 'Appearance>Themes' to test it works)
+
+Thumbnail (The image that is displayed on your theme in the Admin area).
+Create a thumbnail image for your site, Name your image screenshot.png and place it in your theme folder that contains your style.css and index.php files.
+
+Now its time to link our css and javascript files to our theme, along with a header and footer file.
+2.12 in
+https://www.youtube.com/watch?v=KibbYf9avko&t=43s 
+
+We will deal with the header and footer files first.
+Create a file called header.php and footer.php (Examples of these are in github>php>boilerplate.
+
+Importing the header and footer files into our index.php file
+
+
 
 
