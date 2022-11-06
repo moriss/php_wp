@@ -65,7 +65,18 @@ We will deal with the header and footer files first.
 Create a file called header.php and footer.php (Examples of these are in github>php>boilerplate.
 
 Importing the header and footer files into our index.php file
+Add his to the index.php file
+####################
+<?php get_header();?>
+<h1>Hi from index.php</h1>
+<?php get_footer();?>
+#####################
 
 
+Linking our css and js files to our theme
+This is achieved through a wordpress hook called 
+Firstly create a file called functions.php  (This is otherwise a very usefull file we can do interesting things with)
+
+stopped here 2.16 in
 
 
