@@ -1,6 +1,9 @@
 Below is from https://www.youtube.com/watch?v=KibbYf9avko&t=43s tutorial
 Approximately 2 hours in
 
+Contents: Intro, Adding a new post, Adding a new pluggin, Change the title and tag line, ADD YOUR CUSTOME THEME, The filepath for your site, Create a GTCoding Folder,  Create a css file,  Create an index.php file,  Create a thumbnail, Add header and footer files,  link our css and javascript files, Importing header and footer files,   Link our css and javascript files to our theme(wp_enqueue_script  wp_enqueue_style  functions.php),  
+
+Intro:
 Open Local
 Select Admin
 Enter Username and Password (admin, admin)
@@ -29,6 +32,7 @@ To change the 'Title' and 'Tag line':
 Open settings>general to then edit these and other settings.
 @@@@@@@@@@@@@@@@@@@@@@@@@@
 
+ADD YOUR CUSTOME THEME:
 It's now time to add your own custom theme: (The GT Coding  site you created in this tutorial)
 Go to Local then choose the site title (left column), right click>Go to site folder
 You may have to click 'Go to site folder' again below the title at the top of the page.
@@ -38,9 +42,11 @@ app>public takes you to all the necessary files.
 Then
 wp-content>themes, shows all current themes
 
+Create a GTCoding folder:
 Create a new folder nameing it GTCoding
 (You can see the new theme in Dashboard>Appearance>Themes  Under 'Broken Themes')
 
+Create a css file:
 Create a new file called style.css (I did this from the terminal window)
 Type the following in the css file (within comments). **
 Theme: GTCoding
@@ -51,19 +57,19 @@ Version: 1
 **/
 The above details will be displayed when you click on 'Appearance>Themes>Theme Details'.
 
+Create an index.php file:
 Create a new file called index.php (I did this from the terminal window)
 (Write some html in the index.php file and open it in 'Appearance>Themes' to test it works)
 
+Create a thumbnail:
 Thumbnail (The image that is displayed on your theme in the Admin area).
 Create a thumbnail image for your site, Name your image screenshot.png and place it in your theme folder that contains your style.css and index.php files.
 
-Now its time to link our css and javascript files to our theme, along with a header and footer file.
-2.12 in
-https://www.youtube.com/watch?v=KibbYf9avko&t=43s 
 
-We will deal with the header and footer files first.
-Create a file called header.php and footer.php (Examples of these are in github>php>boilerplate.
+Add header and footer files:
+Create a file called header.php and footer.php inside your GTCoding them folder. (Examples of these are in github>php>boilerplate.
 
+Importing header and footer files
 Importing the header and footer files into our index.php file
 Add his to the index.php file
 ####################
@@ -72,10 +78,12 @@ Add his to the index.php file
 <?php get_footer();?>
 #####################
 
+Link our css and javascript files to our theme:
+2.12 in
+https://www.youtube.com/watch?v=KibbYf9avko&t=43s 
 
-Linking our css and js files to our theme
-This is achieved through a wordpress hook called 
-Firstly create a file called functions.php  (This is otherwise a very usefull file we can do interesting things with)
+This is achieved through a wordpress hook called wp_enqueue_script or wp_enqueue_style
+Firstly create a file called functions.php  (This is a very usefull file we can do interesting things with in addition to adding our css and js files to our theme, add new categories to our posts, features such as filters etc.)
 
 stopped here 2.16 in
 
