@@ -1,3 +1,10 @@
+
+Wordpress Specific:
+An error in the function file stops the admin and site pages from loading from 'Local'.
+
+
+
+
 27 oct 22
 This page isn’t workinglocalhost is currently unable to handle this request. HTTP ERROR 500
 when trying to open this url when xampp running:  http://localhost/php_intro/form.php
