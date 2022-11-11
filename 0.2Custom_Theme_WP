@@ -2,16 +2,21 @@ Below is from https://www.youtube.com/watch?v=KibbYf9avko&t=43s tutorial
 Approximately 2.19 in so far 9th October 22
 
 Contents:
-Intro, Adding a new post, Adding a new pluggin, Change the title and tag line, ADD YOUR CUSTOME THEME, The filepath for your site, Create a GTCoding Folder,  Create a css file,  Create an index.php file,  Create a thumbnail, Add header and footer files,  Importing header and footer files,   Link our css and javascript files to our theme(wp_enqueue_script  wp_enqueue_style  functions.php),  
+Intro, Adding a new post, Adding a new pluggin, Change the title and tag line, ADD YOUR CUSTOME THEME, The filepath for your site, Create a GTCoding Folder,  
+Create a css file,  Create an index.php file,  
+
+HERE# Create a thumbnail, Add header and footer files,  Importing header and footer files,   Link our css and javascript files to our theme(wp_enqueue_script  wp_enqueue_style  functions.php),  
 
 Intro:
 Open Local
 Select Admin
+Your site url: http://gtcoding.local/
+Your Admin url: 
 Enter Username and Password (admin, admin)
 
-On the Admin page, hover over site name (tope right) and select View Site
+On the Admin page, hover over site name (top right) and select View Site
 
-To view all current themes, go to 'Admin" and click on 
+To view all current themes, click on 
 Appearance>Themes
 
 Here, you can select and 'Activate' different 'Themes' for your site
@@ -26,8 +31,8 @@ By default, when you select 'Publish', it will show on the home page.
 
 Incidental: Adding a new Plugin:
 click on Plugins>add new
-'Contact form 7' is the plugin installed in the tuturial.
-By Hovering over 'Contact' (Left column of Admin Page) then selecting 'Contact Froms', will take you to this newly installed plugin. 
+('Contact form 7' is the plugin installed in the tuturial so go ahead and install it).
+Hovering over 'Contact' (Left column of Admin Page) then selecting 'Contact Forms', will take you to this newly installed Contact form 7 plugin. 
 
 To change the 'Title' and 'Tag line':
 Open settings>general to then edit these and other settings.
@@ -35,17 +40,15 @@ Open settings>general to then edit these and other settings.
 
 ADD YOUR CUSTOME THEME:
 It's now time to add your own custom theme: (The GT Coding  site you created in this tutorial)
-Go to Local then choose the site title (left column), right click>Go to site folder
-You may have to click 'Go to site folder' again below the title at the top of the page.
+Go to Local then choose the site title (left column), right click>Go to site folder.
+Once the folder opens, the file path to your theme files are GTCoding>app>public>wp-content>themes>GTCoding
 
-Incidentally, the filepath for your site files in this instance is home>local sites>gtcoding>app>public>wp-content>themes>gtcoding. files are here.
-app>public takes you to all the necessary files.
-Then
-wp-content>themes, shows all current themes
+Incidentally, the complete filepath to your site files in this instance is home>local sites>gtcoding>app>public>wp-content>themes>. 
 
-Create a GTCoding folder:
-Create a new folder nameing it GTCoding
-(You can see the new theme in Dashboard>Appearance>Themes  Under 'Broken Themes')
+Create a folder in the Themes folder nameing it GTCoding
+(You can see the new theme in WP Admin>Appearance>Themes  It will currently be visible under 'Broken Themes')
+
+NB: The code for the files below are in github>php_wp>boilerplate
 
 Create a css file:
 Create a new file called style.css (I did this from the terminal window)
@@ -64,11 +67,11 @@ Create a new file called index.php (I did this from the terminal window)
 
 Create a thumbnail:
 Thumbnail (The image that is displayed on your theme in the Admin area).
-Create a thumbnail image for your site, Name your image screenshot.png and place it in your theme folder that contains your style.css and index.php files.
+Save a thumbnail image of your choice, Name your image screenshot.png and place it in your theme folder that contains your style.css and index.php files.
 
 
 Add header and footer files:
-Create a file called header.php and footer.php inside your GTCoding them folder. (Examples of these are in github>php>boilerplate.
+Create a file called header.php and footer.php inside your GTCoding theme folder. (Examples of these are in github>php_wp>boilerplate.
 
 Importing header and footer files
 Importing the header and footer files into our index.php file
@@ -87,5 +90,4 @@ This is achieved through a wordpress hook called wp_enqueue_script or wp_enqueue
 Firstly create a file called functions.php  (This is a very usefull file we can do interesting things with in addition to adding our css and js files to our theme, add new categories to our posts, features such as filters etc.)
 
 stopped here 2.16 in
-
 
