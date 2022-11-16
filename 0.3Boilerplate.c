@@ -1,8 +1,8 @@
-Contents:
-css file,  index.php file, Header file, 
+//Contents:
+//css file,  index.php file, Header file, 
 
-css file
-css file Initial contents
+//css file
+//css file Initial contents
 ################
 /**
 Theme: GTCoding
@@ -14,8 +14,8 @@ Version: 1
 ###############
 
 
-index.php file
-index.php initial contents
+//index.php file
+//index.php initial contents
 ################
 <?php get_header();?>
 <h1>Hi from index.php</h1>
@@ -24,9 +24,9 @@ index.php initial contents
 #################
 
 
-Header file
-Header file name: header.php
-Header file code
+//Header file
+//Header file name: header.php (For the purposes of wordpress, it needs to be this specific name)
+//Header file code
 ################
 <!DOCTYPE html>
 <html lang="en">
@@ -53,5 +53,25 @@ Footer file code
 </body>
 </html>
 #########################
+
+
+functions.php
+######################
+<?php
+
+//adding the css and js files
+
+function gt_setup(){
+	wp_enqueue_style('style', get_stylesheet_uri(), NULL,  microtime(), all() );
+	//parameter inputes:
+	//(Name of css file, file destination, No dependencies in our css file,  Auto updates file after changes, device types supported)
+	
+
+	wp_enqueue_script("main", get_theme_file_uri(js/main.js),  NULL,  microtime(),  true);
+	//parameter inputes:
+	//(filename $handle,  file destination get_theme_file_uri(js/main.js) $src,  dependencies $deps,  version[Auto updates after changes] $ver,  Whether placed in footer] $in_footer))
+}
+?>
+######################
 
 
