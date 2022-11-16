@@ -11,7 +11,7 @@ Intro:
 Open Local
 Select Admin
 Your site url: http://gtcoding.local/
-Your Admin url: 
+Your Admin url: http://gtcoding.local/wp-admin/
 Enter Username and Password (admin, admin)
 
 On the Admin page, hover over site name (top right) and select View Site
@@ -34,14 +34,15 @@ click on Plugins>add new
 ('Contact form 7' is the plugin installed in the tuturial so go ahead and install it).
 Hovering over 'Contact' (Left column of Admin Page) then selecting 'Contact Forms', will take you to this newly installed Contact form 7 plugin. 
 
-To change the 'Title' and 'Tag line':
+To change the website's 'Title' and 'Tag line':
 Open settings>general to then edit these and other settings.
 @@@@@@@@@@@@@@@@@@@@@@@@@@
 
 ADD YOUR CUSTOME THEME:
 It's now time to add your own custom theme: (The GT Coding  site you created in this tutorial)
 Go to Local then choose the site title (left column), right click>Go to site folder.
-Once the folder opens, the file path to your theme files are GTCoding>app>public>wp-content>themes>GTCoding
+You can also click on the "Go to site folder" link below the main title of your site on the same page.
+Incidentally: Once the folder opens, the file path to your theme files are GTCoding>app>public>wp-content>themes>GTCoding
 
 Incidentally, the complete filepath to your site files in this instance is home>local sites>gtcoding>app>public>wp-content>themes>. 
 
@@ -63,19 +64,22 @@ The above details will be displayed when you click on 'Appearance>Themes>Theme D
 
 Create an index.php file:
 Create a new file called index.php (I did this from the terminal window)
-(Write some html in the index.php file and open it in 'Appearance>Themes' to test it works)
+(Write some html in the index.php file and activate it in 'Appearance>Themes' to test it works)
 
 Create a thumbnail:
 Thumbnail (The image that is displayed on your theme in the Admin area).
-Save a thumbnail image of your choice, Name your image screenshot.png and place it in your theme folder that contains your style.css and index.php files.
+Save a thumbnail image of your choice, Name your image screenshot.png (Must be named in this way) and place it in your theme folder that contains your style.css and index.php files.
+This image will now appear in your theme thumbnail
+
 
 
 Add header and footer files:
 Create a file called header.php and footer.php inside your GTCoding theme folder. (Examples of these are in github>php_wp>boilerplate.
+Ad some html to both these files for later testing.
 
 Importing header and footer files
 Importing the header and footer files into our index.php file
-Add his to the index.php file
+Add this script to the index.php
 ####################
 <?php get_header();?>
 <h1>Hi from index.php</h1>
