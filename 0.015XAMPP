@@ -1,0 +1,61 @@
+YOU NEED XAMPP FOR THIS
+
+You are working/practicing with files you created inside your downLoaded wordpresss folder. This is located 
+
+Below is an overall guide. Go straight to wp_course when you are set up with xampp and browser.
+
+
+You are working through 
+11111111111111111#################################
+https://www.youtube.com/watch?v=KibbYf9avko&t=43s
+approx:1.25 in
+It's a 4 hour long wordpress template building course.
+YOu are 1.52 in. You have completed the initial php tasks ending with a log-in form from  2practice.php  to dashboard.php. (19th April 22)However, since so much time has passed, you need to start from the beginning.
+
+Next step is creating an html file with css styling. 
+YOu might as well follow his coding and keep as a template. 
+You are on the php section, using the
+lampp.htdocs.wordpress.1.practice.php file.
+and
+lampp.htdocs.wordpress.2practice.php file.
+###################################################
+
+
+
+
+SET UP
+##############################################################
+Open 2practice.php in text editor
+cd .. cd .. then: cd opt/lampp/htdocs/wordpress
+
+Paste local host address into browser to access php practice file.
+
+Start xampp 
+From wordpress directory go back to lampp directory.
+lampp is located here: cd /opt/lampp
+cd .. cd .. 
+Now run lampp
+sudo ./manager-linux-x64.run
+
+###############################################################
+
+
+
+
+EXTRA NOTES
+xampp is located here: cd/opt/lampp (lampp is the xamp folder)
+
+So in terminal type cd .. THEN AGAIN cd .. to get to the directory containing opt
+
+go to the opt directly then the lampp directory (cd opt then cd lampp)
+
+When you list the contents of the directory, this is the one to look for:
+manager-linux-x64.run
+
+To run xampp, type : sudo ./manager-linux-x64.run
+
+This opens xampp.
+
+>manage servers (at top) > start all
+
+ONce xampp is running, you can go to the wordpress file
