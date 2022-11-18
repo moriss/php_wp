@@ -10,4 +10,4 @@ During the early stages of this course I used xampp to practice general php exer
 
 0.01Early GTCoding guide: Contains general notes as I worked my way through the initial stages of the course up to the php exercises.
 
-0.02Early_Practice_GTCoding
+0.02Early_GTCoding_Practice:  
