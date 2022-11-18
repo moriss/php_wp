@@ -8,5 +8,6 @@ Local is an alternative to using xampp to insall wordpress. I'm using local in t
 
 During the early stages of this course I used xampp to practice general php exercises and created code files along the way for reference.
 
-0.01Early GTCoding guide
+0.01Early GTCoding guide: Contains general notes as I worked my way through the initial stages of the course up to the php exercises.
 
+0.02Early_Practice_GTCoding
