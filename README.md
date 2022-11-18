@@ -10,4 +10,8 @@ During the early stages of this course I used xampp to practice general php exer
 
 0.01Early GTCoding guide: Contains general notes as I worked my way through the initial stages of the course up to the php exercises.
 
-0.02Early_GTCoding_Practice:  
+0.02Early_GTCoding_Practice:  Contains alot of introductory php code for your reference
+
+A note to myself. 
+I have various files in projects>wordpress   and   htdocs  that are relevant to this course. Particularly dashboard.php which deals with forms.
+I don't really need them at the moment moving forward since I am now using 'local' to run wordpress (locally) to ultimately create my own wordpress theme. So everything relating to this course, from now on, can be found on this repo. Although this is open to change/correction where I am free to delve back into past work anywhewre I see fit.
