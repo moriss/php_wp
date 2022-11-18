@@ -1,0 +1,194 @@
+Updating from February 22
+
+Initial Notes:
+The new boston might be the guy that taught me building a wordpress OR Joomla template before. You could also refer to his tutorials.
+
+So you have 2 wordpress folders. one you created yourself at: 
+desktop>projects>wordpress   Ths is the one you are using for the start of the course.
+
+
+and the downloaded one at other locations>computer>opt>lampp>htdocs>wordpress
+You will migrate to this one when you start with php.
+
+
+Opening xampp 
+In order to begin working with php locally, you need to open xampp inside of htdocs. You have been doing this for the ealy part of the gtcoding course.  
+sudo ./manager-linux-x64.run
+
+
+
+START OF NEWLY FOUND WP YOUTUBE COURSE
+####################################
+https://www.youtube.com/watch?v=KibbYf9avko&t=43s
+
+FOR THE BEGINNING OF THIS COURSE (HTML CSS) USE VS CODE FOR THIS BECAUSE OF LIVE SERVER OPTION 
+LIVE SERVER ADDRESS FOR YOUR CURRENT FILE
+http://127.0.0.1:5500/index.html
+
+
+1.Research and Planning first module INTRODUCTION
+CMS Content management system called wordpress
+WP is useful due to popularity and its plugins including seo, social, contact forms and email plugins. Also ones to speed up your site (compress images etc). Also good for blogs.
+
+
+Fonts:
+Google Fonts at fonts.google.com
+Choose your fonts to either link-to or download and use localy.
+You will have a script to all the fonts you picked (to the right of the screen) which needs to be added to you html header. 
+
+There is also a css rule for these fonts to be copied to your css page.
+
+Example of selected fonts below
+Roboto
+Roboto Condensed
+Roboto Slab
+
+7.24
+
+FREE IMAGES resources
+Pixaby.com (seems to take you to other paid sites)
+Unsplash.com (This is the one I've been using
+Pexels.com
+
+
+Responsive
+4 break points
+1200px
+900px
+720px
+600px  -->Full width of browser window
+
+font awsome icons for social media logos etc. It needs to be imported into your website
+Font awsome notes are in projects>site styling
+
+####################################
+END OF FIRST MODULE
+
+STOPPED 12 MINS IN 7th feb 22
+
+You created a folder named 'my wp site' inside A-Z.wordpress to use for this course.
+
+STOPPED HERE
+
+
+Notes for vs code are in projects>site-styling>vs code
+#################################################################
+
+STOPPED 12.59 in
+https://www.youtube.com/watch?v=KibbYf9avko&t=43s
+
+Google fonts next: 11.27 in
+
+fonts.google.com
+Select all the fonts you want and they will be added to the embeding link on the right hand side. 
+Remember to also grab the css font family code. 
+
+Font awsome cdn (content delivery network)
+https://fontawesome.com/v4.7/get-started/
+Below message from site
+(Font Awesome CDN is the easiest way to get Font Awesome on your website or app, all with just a single line of code. No downloading or installing!)
+
+I was then redirected to this site to enter my email again.
+
+https://fontawesome.com/start
+marrocco001@gmail.com
+message: Email has already been taken
+
+HOWEVER! I stll received the font awsome script via email 7th feb 22
+##############
+
+###############
+Start building basic site.
+
+
+
+Font awsome approx 16.13 in
+@@@@@
+
+
+
+@@@@@
+
+
+
+
+~~~vs code
+Open Live server in visual studio code
+Open visual studio > Restricted (bottom left) >add folders to trust >  Open trusted folder inside vs > Open firefox from footer bar > click "go live"
+NB: Very important to open firefox before clicking on go live. If you don't, ff just keeps crashing.
+
+When connected to the internet, the font awsome icons look like a broken image link.
+~~~
+
+
+
+
+
+@@@@@
+
+
+
+
+
+
+
+
+
+
+
+START OF PHP INTRODUCTION 
+########################################################
+https://www.youtube.com/watch?v=KibbYf9avko&t=43s
+1.22 IS START OF PHP INTRODUCTION. 
+**iMPORTANT NOTE:You have a php_intro folder in opt/lampp/htdocs
+withins this is an index.php file. You can only make changes/additions to this folder if you access it via su superuser via terminal.(instructioins on how to do this is in the ubuntu folder and also here). 
+
+sudo su
+Type above into terminal and enter your password. this gives you superuser rights so you can open, edit and save files inside htdocs. 
+
+
+
+Instructions on how to do create, edit and save files in htdocs
+
+
+RUN XAMPP FIRST, THEN PASTE http://localhost/php_intro
+INTO YOUR GOOGLE BROWSER TO GET TO THE PHP PAGE YOU ARE WORKING ON. (index.php)
+
+Then open the file in an editable version:
+Remember you need to open the file via terminal as a superuser (bluefish <filename> ) in order to make changes/additions and save the file.
+
+
+SO FAR
+I am starting from the beginning of the tutorial using the index.php file in htdocs/php_intro
+
+https://www.youtube.com/watch?v=KibbYf9avko&t=43s
+1.34.02 Associative arry next Arrays
+
+
+Exercises:
+#CONTENTS
+#string variables, #number variables, #echo, #html tags   #single quotes,  
+#concatination #conditional statements #boolean,  #arrays  ,    #printing methods STOPPED HERE,
+#access index value of array. #associative array
+
+
+https://www.youtube.com/watch?v=KibbYf9avko&t=43s
+Froms 1.50
+
+
+Using this location to put form together
+
+http://localhost/php_intro/
+
+
+UPDATE 9TH SEPTEMENBER 22
+You have changed things for clarity.
+
+You created a new php_intro directory inside htdocs/wordpress
+
+In this you have created 3 files: index.php and page2.php and dashboard.php
+
+Location of these via browser: http://localhost/wordpress/php_intro/
+
+1.53 in (css styling)
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
