@@ -31,7 +31,7 @@ Do this {  ;}  while (this is true) ;
 Please note position of semi colon being inside for {} and outside for ()
 On the other hand: No semi colon required after the condition
 while (){
-
+ 
 ;}
 
 
