@@ -5,7 +5,7 @@ Contents:
 Intro, Adding a new post, Adding a new pluggin, Change the title and tag line, ADD YOUR CUSTOME THEME, The filepath for your site, Create a GTCoding Folder,  
 Create a css file,  Create an index.php file,  
 
-HERE# Create a thumbnail, Add header and footer files,  Importing header and footer files,   Link our css and javascript files to our theme(wp_enqueue_script  wp_enqueue_style  functions.php),  
+HERE# , Add header and footer files,  Importing header and footer files,   Link our css and javascript files to our theme(wp_enqueue_script  wp_enqueue_style  functions.php),  
 
 Intro:
 Open Local
