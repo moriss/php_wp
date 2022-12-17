@@ -3,6 +3,8 @@ This repo is initially based on the wordpress/php tutorial on youtube https://ww
 
 I'm using it as a way to introduce myself to wordpress templates whilst dabbling more into php
 
+The main goals are to get familiar with building wordpress themes easily and then get comfortable making user-side updates etc so I can show potential customers how to get the most from their wordpress site. 
+
 7th December 2022
 I am working through the course mainly using and updating the 0.2Custom_Theme_WP  file.
 I am 2.16 into the course.
