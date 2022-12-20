@@ -9,7 +9,7 @@ The main goals are to get familiar with building wordpress themes easily and the
 I am working through the course mainly using and updating the 0.2Custom_Theme_WP  file.
 I am 2.16 into the course.
 
-If you have been away from this course for a time, It may be best to re-start earlier on where 'Local' (0.1_Local_WP) is introduced, just to familiarise yourself with what you have been doing leading up to adding your own theme. 
+If you have been away from this course for a time, It may be best to re-start earlier on where 'Local' (0.1_Local_WP) is introduced, around 1.58 in, just to familiarise yourself with what you have been doing leading up to adding your own theme. 
 
 Local is an alternative to using xampp to insall wordpress. I'm using local in this instance because the course above does. (A file in the Ubuntu repo shows you how to download software onto the ubuntu linux platform)
 
