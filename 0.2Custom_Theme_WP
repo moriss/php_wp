@@ -91,7 +91,7 @@ Link our css and javascript files to our theme:
 https://www.youtube.com/watch?v=KibbYf9avko&t=43s 
 
 STOPPED HERE
-EXERCISE: 
+EXERCISE 1: 
 1. Create a new theme on your wordpress download 
 2. add an index.php file 
 3. Create separate header and footer files and import them into your index.php file. 
