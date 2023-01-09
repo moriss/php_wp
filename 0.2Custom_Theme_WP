@@ -53,7 +53,8 @@ NB: The code for the files below are in github>php_wp>boilerplate
 
 Create a css file:
 Create a new file called style.css (I did this from the terminal window)
-Type the following in the css file (within comments). **
+Type the following in the css file (within comments). 
+/**
 Theme: GTCoding
 Author: Maurizio Marrocco
 Author URI:
@@ -95,7 +96,11 @@ EXERCISE 1:
 1. Create a new theme on your wordpress download 
 2. add an index.php file 
 3. Create separate header and footer files and import them into your index.php file. 
-4. Test to check it works.
+At this point, the theme should be visible in 'appearence' > themes, but labled as 'broken@ (no css file)
+4. Add the css and javascript files
+
+Address of new site: http://grange.local/
+Admin: http://grange.local/wp-admin/
 
 This is achieved through creating a file called functions.php. Then use of a wordpress hook called wp_enqueue_script or wp_enqueue_style within this file.
 Firstly create the file called functions.php  (This is a very usefull file we can do interesting things with in addition to adding our css and js files to our theme, such as adding a new categories to our posts and features such as filters etc.)
