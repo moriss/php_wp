@@ -68,8 +68,8 @@ function gt_setup(){
 	
 
 	wp_enqueue_script("main", get_theme_file_uri(js/main.js),  NULL,  microtime(),  true);
-	//parameter inputes:
-	//(filename $handle,  file destination get_theme_file_uri(js/main.js) $src,  dependencies $deps,  version[Auto updates after changes] $ver,  Whether placed in footer] $in_footer))
+	//parameter inputs explanation for adding css and js files to your theme.
+	//($handle:filename , $src:file destination/location ,  $deps, Whether there are any depencencies ,  $ver:version[mocrotime updates after any changes] ,  $in_footer:Whether placed in footer)
 }
 ?>
 ######################
