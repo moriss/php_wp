@@ -3,7 +3,8 @@ Approximately 2.19 in so far 9th October 22
 
 Contents:
 ##############
-Intro, Adding a new post, Adding a new pluggin, Change the title and tag line, ADD YOUR CUSTOME THEME, The filepath for your site, Create a GTCoding Folder,  
+Intro, Adding a new post, Adding a new pluggin, Change the title and tag line, ADD YOUR CUSTOME THEME, The filepath for your site, Create a 
+Folder,  
 Create a css file,  Create an index.php file,   Add header and footer files,  Importing header and footer files,  EXERCISE,  Link our css and javascript files to our theme(wp_enqueue_script  wp_enqueue_style  functions.php),  
 ##############
 
@@ -98,7 +99,7 @@ Admin: http://grange.local/wp-admin/
 
 Link our css and javascript files to our theme:
 This is achieved through creating a file called functions.php. Then use of a wordpress hook called wp_enqueue_script or wp_enqueue_style within this file.
-Firstly create the file called functions.php  (This is a very usefull file we can do interesting things with in addition to adding our css and js files to our theme, such as adding a new categories to our posts and features such as filters etc.)
+Firstly create the file called functions.php  (This is a very usefull file we can do interesting things with in addition to adding our css and js files to our theme, such as adding a new categories to our posts and add new features to our theme and filters etc.)
 
 In the interim, do the exercise below to practice.
 EXERCISE 1: 
@@ -110,4 +111,23 @@ At this point, the theme should be visible in 'appearence' > themes, but labled 
 5. Create a functions.php file and use it to link your your css and js files to our theme.
 
 stopped here 2.16 in
+
+We now need to link google fonts and font awsome to our webiste.
+
+2.20 in
+Before continuing at 2.20 you are going back to the google fonts part of the tutorial since you need to add a link to it in the functions.php file.
+
+@@@@@
+Google fonts
+https://fonts.google.com/
+This is the link for Roboto, Roboto Slab, Roboto Condensed:
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+css Rules (Suplied by same fonts.google website:
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Roboto Slab', serif;
 
