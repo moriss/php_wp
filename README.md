@@ -1,5 +1,9 @@
 # php
+
+Go straight to 0.2Custom_Theme_WP to work your way through the youtube course below.
 This repo is initially based on the wordpress/php tutorial on youtube https://www.youtube.com/watch?v=KibbYf9avko&t=43s  aka GTCoding
+
+Read below if you have been away from this for while.
 
 I'm using it as a way to introduce myself to wordpress templates whilst dabbling more into php
 
