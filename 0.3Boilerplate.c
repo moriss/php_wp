@@ -62,6 +62,7 @@ functions.php
 //adding the css and js files
 
 function gt_setup(){
+	wp_enqueue_style('google-fonts' , )
 	wp_enqueue_style('style', get_stylesheet_uri(), NULL,  microtime(), all() );
 	//parameter inputes:
 	//(Name of css file, file destination, No dependencies in our css file,  Auto updates file after changes, device types supported)
