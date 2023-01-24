@@ -1,0 +1,37 @@
+I took these notes from this tutorial:  https://www.youtube.com/watch?v=U323QLDy3bQ&t=44s
+bjorn from wp learning lab.
+
+Integrate font awsome icons into your wp theme directly, using the code from the font awsome site (no plugins)
+
+It says the best place to add this code is with a child theme.
+This is the video that teaches you about adding a child theme
+https://www.youtube.com/watch?v=ZBoW1PtcURo&t=0s
+
+PLEASE NOTE:
+I want to finish the current tutorial: How to make a custome wp website:  https://www.youtube.com/watch?v=KibbYf9avko&t=43s  before continuing down the road of the tutorial above re child themes etc. So below is relevant to this tutorial.
+
+For some reason Ive had difficulty finding the correct .css script that the tutorial uses, which requires adding to the functions.php file. 
+However, a simple google search brought me to https://fontawesome.com/v3/get-started/  which has the following .css links:
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+The message below follows the message above.
+"Want to use Font Awesome by itself without Bootstrap? Just don't include the first line."
+
+The tutorial doesn't mention bootstrap so I'll do as the message above says.
+
+Once the code above has been added to the functions.php file, we need to add an action as follows (to the same file).
+
+Parameter 1 = when the function should be executed
+parameter 2 = The name of the function
+add_action('wp_enqueue_scripts', 'gt_setup');
+
+Below is in the  0.2Custom_Theme_WP  file
+@@@@@@@
+Now go to the header file you created. 
+Place below in the header file within the head. 
+(Go into php mode):
+<?php wp_head();  ?>
+
+Now do the same with the footer file as follows, placing it BEFORE the end body tag.
+<?php wp_footer();  ?>
+@@@@@@@@
