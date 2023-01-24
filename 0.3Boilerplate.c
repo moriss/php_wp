@@ -59,19 +59,27 @@ functions.php
 ######################
 <?php
 
-//adding the css and js files
+//adding the css and  js files as well as google fonts and font-awesome
 
 function gt_setup(){
-	wp_enqueue_style('google-fonts' , )
+	//Below is for google fonts
+	wp_enqueue_style('google_fonts', '//fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap"');
+	
+	//Below is for font-awesome
+	wp_enqueue_style('font_awsome' , '//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"');
+	
+	//Below is to link your stylesheet
 	wp_enqueue_style('style', get_stylesheet_uri(), NULL,  microtime(), all() );
 	//parameter inputes:
-	//(Name of css file, file destination, No dependencies in our css file,  Auto updates file after changes, device types supported)
+	//(Name of css file,    file destination, No dependencies in our css file,  Auto updates file after changes, device types supported)
 	
-
+	
+	//Below is to link your javascript file	
 	wp_enqueue_script("main", get_theme_file_uri(js/main.js),  NULL,  microtime(),  true);
-	//parameter inputs explanation for adding css and js files to your theme.
-	//($handle:filename , $src:file destination/location ,  $deps, Whether there are any depencencies ,  $ver:version[mocrotime updates after any changes] ,  $in_footer:Whether placed in footer)
+	//parameter inputes:
+	//(filename $handle,  file destination get_theme_file_uri(js/main.js) $src,  dependencies $deps,  version[Auto updates after changes] $ver,  Whether placed in footer] $in_footer))
 }
+
 ?>
 ######################
 
