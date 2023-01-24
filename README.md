@@ -3,6 +3,11 @@
 Go straight to 0.2Custom_Theme_WP to work your way through the youtube course below.
 This repo is initially based on the wordpress/php tutorial on youtube https://www.youtube.com/watch?v=KibbYf9avko&t=43s  aka GTCoding
 
+##Update 24th January 23
+This guy seems to cover alot with wordpress and introduced me to using a child site to add font awsome icons.
+His videos could be very useful. Below is one of them.
+https://www.youtube.com/watch?v=U323QLDy3bQ&t=44s
+
 Read below if you have been away from this for while.
 
 I'm using it as a way to introduce myself to wordpress templates whilst dabbling more into php
