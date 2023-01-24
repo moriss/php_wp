@@ -115,16 +115,14 @@ stopped here 2.16 in
 We now need to link google fonts and font awsome to our webiste.
 
 2.20 in
-Before continuing at 2.20, refer to the 'integrating font awsome' file.
+Before continuing at 2.20, refer to the 3.5_Adding_font_awsome file for more information in integrating font awesome into your wp site.
 
-@@@@@
-Google fonts
-https://fonts.google.com/
-This is the link for Roboto, Roboto Slab, Roboto Condensed:
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+//Below is for google fonts
+	wp_enqueue_style('google_fonts', '//fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap"');
+	
+	//Below is for font-awesome
+	wp_enqueue_style('font_awsome' , '//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"');
 
 css Rules (Suplied by same fonts.google website:
 font-family: 'Roboto', sans-serif;
