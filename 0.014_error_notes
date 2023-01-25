@@ -1,10 +1,22 @@
 Pasted Error Messages with Fixes
 
+25 jan 23
+################
+Errors Solved
+Error Message: Use of undefined constant all - assumed
+wp_enqueue_style('style', get_stylesheet_uri(), NULL,  microtime(), all );//NB: here, all is used as an array key
+
+Explanation: all should be written as a string, ie 'all'.
+
+This is from stack overflow regarding this error.
+all  is meant to be a string (to be used here as array key). Strings in PHP must be enclosed in quotes. In the days of the long past PHP was lax about using quotes for single-word strings but these days are long gone.Therefore, it must be 'department' or "department".
+
+################
+
+
 
 Wordpress Specific:
-An error in the function file stops the admin and site pages from loading from 'Local'.
-
-
+Any errors in the function file stops the admin and site pages from loading from 'Local'.
 
 
 27 oct 22
