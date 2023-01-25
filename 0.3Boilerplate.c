@@ -34,13 +34,13 @@ Version: 1
     <meta charset="utf-8">
     <title>GTCoding</title>
     <script src="script.js" defer></script>
+    <?php wp_head();  ?>//A wordpress hook
   </head>
   <body>
     <header>
     <h1>Header</h1>
     </header>   
     #################
-    
     
     
 Footer file
@@ -50,6 +50,8 @@ Footer file code
     <footer>
       <p>Foooter goes here</p>
     </footer>
+    <?php wp_footer();  ?>//A wordpress hook
+    
 </body>
 </html>
 #########################
@@ -69,16 +71,22 @@ function gt_setup(){
 	wp_enqueue_style('font_awsome' , '//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"');
 	
 	//Below is to link your stylesheet
-	wp_enqueue_style('style', get_stylesheet_uri(), NULL,  microtime(), all() );
+	wp_enqueue_style('style', get_stylesheet_uri(), NULL,  microtime(), 'all');
 	//parameter inputes:
 	//(Name of css file,    file destination, No dependencies in our css file,  Auto updates file after changes, device types supported)
 	
 	
 	//Below is to link your javascript file	
-	wp_enqueue_script("main", get_theme_file_uri(js/main.js),  NULL,  microtime(),  true);
+	wp_enqueue_script("main", get_theme_file_uri('js/main.js'),  NULL,  microtime(),  true);
 	//parameter inputes:
 	//(filename $handle,  file destination get_theme_file_uri(js/main.js) $src,  dependencies $deps,  version[Auto updates after changes] $ver,  Whether placed in footer] $in_footer))
 }
+
+//Below refers to the function above named 'gt_setup'
+//Parameter 1 = when the function should be executed
+//parameter 2 = The name of the function
+add_action('wp_enqueue_scripts', 'gt_setup');
+
 
 ?>
 ######################
