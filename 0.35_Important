@@ -1,0 +1,13 @@
+In the code below we have 'microtime'. 
+The section in the tutorial  https://www.youtube.com/watch?v=KibbYf9avko&t=43s  is approximatley 2.18 in
+This -I think- relates to having your page update when you refresh. Best when developing your site
+The other option is you can state a version number such as "1.0" or "1.5" etc. best when you finished your site
+
+
+wp_enqueue_style('style', get_stylesheet_uri(), NULL,  microtime(), 'all' );
+	//parameter inputes:
+	//(Name of css file,    file destination, No dependencies in our css file,  Auto updates file after changes, device types supported)
+	
+	
+	//Below is to link your javascript file	
+	wp_enqueue_script("main", 'get_theme_file_uri(js/main.js'),  NULL,  microtime(),  true);
