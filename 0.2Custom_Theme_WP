@@ -139,7 +139,7 @@ We now need to add code to the header and footer files.
 <?php wp_head();  ?> //A wordpress hook that needs to go within he header tags of the header file
 <?php wp_footer();  ?> //A wordpress hook that needs to go before the body closing tag of the footer file
 
-
+Start from 2.20 in for a partical re-cap
 
 
 
