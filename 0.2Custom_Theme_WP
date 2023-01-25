@@ -109,23 +109,41 @@ EXERCISE 1:
 At this point, the theme should be visible in 'appearence' > themes, but labled as 'broken@ (no css file)
 4. Add the css and javascript files
 5. Create a functions.php file and use it to link your your css and js files to our theme.
+See boilerplate for explanations to the required code below.
+wp_enqueue_style('style', get_stylesheet_uri(), NULL,  microtime(), 'all');
+wp_enqueue_script("main", get_theme_file_uri('js/main.js'),  NULL,  microtime(),  true);
+
 
 stopped here 2.16 in
 
 We now need to link google fonts and font awsome to our webiste.
-
 2.20 in
 Before continuing at 2.20, refer to the 3.5_Adding_font_awsome file for more information in integrating font awesome into your wp site.
 
-
-//Below is for google fonts
-	wp_enqueue_style('google_fonts', '//fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap"');
+	//Below is for google fonts
+	wp_enqueue_style('google_fonts', '//fonts.googleapis.com/css2?	family=Roboto+Condensed:ital,wght@1,300&family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap"');
 	
 	//Below is for font-awesome
 	wp_enqueue_style('font_awsome' , '//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"');
 
-css Rules (Suplied by same fonts.google website:
-font-family: 'Roboto', sans-serif;
-font-family: 'Roboto Condensed', sans-serif;
-font-family: 'Roboto Slab', serif;
+
+The functions.php file requires the following code to 'action' its function named 'gt_setup'
+//Below refers to the function above named 'gt_setup'
+//Parameter 1 = when the function should be executed
+//parameter 2 = The name of the function
+add_action('wp_enqueue_scripts', 'gt_setup');
+
+
+We now need to add code to the header and footer files.
+
+<?php wp_head();  ?> //A wordpress hook that needs to go within he header tags of the header file
+<?php wp_footer();  ?> //A wordpress hook that needs to go before the body closing tag of the footer file
+
+
+
+
+
+
+
+
 
