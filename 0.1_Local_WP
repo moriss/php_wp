@@ -1,5 +1,8 @@
 Using Local 
 
+The way local works is that you download it first. You then 'Add a site' which creates an empty folder with your chosen site name. 
+At this point, until you add the css file, it will appear as 'broken' on the themes section of the admin site.
+
 Building a wordpress site Tools:
 Below instructions are for Local (By flywheel). Other software than can be used are XAMPP amd AMPPS
 
