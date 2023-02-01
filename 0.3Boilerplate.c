@@ -20,7 +20,7 @@ Version: 1
 <?php get_header();?>
 <h1>Hi from index.php</h1>
 <?php get_footer();?>
-//Wp specific functions to insert above code into the index.php (or any other) file.
+<!--////Wp specific functions to insert above code into the index.php (or any other) file. -->
 #################
 
 
@@ -34,7 +34,7 @@ Version: 1
     <meta charset="utf-8">
     <title>GTCoding</title>
     <script src="script.js" defer></script>
-    <?php wp_head();  ?>//A wordpress hook
+    <?php wp_head();  ?>  <!--//A wordpress hook -->
   </head>
   <body>
     <header>
@@ -50,7 +50,7 @@ Footer file code
     <footer>
       <p>Foooter goes here</p>
     </footer>
-    <?php wp_footer();  ?>//A wordpress hook
+    <?php wp_footer();  ?> <!--//A wordpress hook -->
     
 </body>
 </html>
