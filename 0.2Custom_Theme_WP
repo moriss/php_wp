@@ -11,9 +11,9 @@ Create a css file,  Create an index.php file,   Add header and footer files,  Im
 Intro:
 Open Local
 Select Admin
-Your site url: http://gtcoding.local/  (You need to 'start' the site in local first)
-Your Admin url: http://gtcoding.local/wp-admin/
-Enter Username and Password (admin, admin)
+Your site url: http://<site name>.local/  (You need to 'start' the site in local first)
+Your Admin url: http://<site name>.local/wp-admin/
+Enter Username and Password (admin, admin for gtcoding practice site)
 
 On the Admin page, hover over site name (top right) and select View Site
 
@@ -46,9 +46,14 @@ You can also click on the "Go to site folder" link below the main title of your 
 Incidentally: Once the folder opens, the file path to your theme files are home/local sites/gtcoding>app>public>wp-content>themes>GTCoding
 
 Incidentally, the complete filepath to your site files in this instance is home>local sites>gtcoding>app>public>wp-content>themes>. 
+So each site you create requires its own individual wordpress environment including the default themes provided. 
 
-Create a folder in the Themes folder nameing it GTCoding
+
+Create a folder in the Themes folder and name it GTCoding
 (You can see the new theme in WP Admin>Appearance>Themes  It will currently be visible under 'Broken Themes')
+
+
+
 
 NB: The code for the files below are in github>php_wp>boilerplate
 
@@ -94,21 +99,14 @@ https://www.youtube.com/watch?v=KibbYf9avko&t=43s
 
 Address of new site: 
 
-://grange.local/
-Admin: http://grange.local/wp-admin/
+://<site name>.local/
+Admin: http://<site name>.local/wp-admin/
 
 Link our css and javascript files to our theme:
 This is achieved through creating a file called functions.php. Then use of a wordpress hook called wp_enqueue_script or wp_enqueue_style within this file.
 Firstly create the file called functions.php  (This is a very usefull file we can do interesting things with in addition to adding our css and js files to our theme, such as adding a new categories to our posts and add new features to our theme and filters etc.)
 
-In the interim, do the exercise below to practice.
-EXERCISE 1: 
-1. Create a new theme on in local
-2. add an index.php file 
-3. Create separate header and footer files and import them into your index.php file. 
-At this point, the theme should be visible in 'appearence' > themes, but labled as 'broken@ (no css file)
-4. Add the css and javascript files
-5. Create a functions.php file and use it to link your your css and js files to our theme.
+
 See boilerplate for explanations to the required code below.
 wp_enqueue_style('style', get_stylesheet_uri(), NULL,  microtime(), 'all');
 wp_enqueue_script("main", get_theme_file_uri('js/main.js'),  NULL,  microtime(),  true);
@@ -138,6 +136,15 @@ We now need to add code to the header and footer files.
 
 <?php wp_head();  ?> //A wordpress hook that needs to go within he header tags of the header file
 <?php wp_footer();  ?> //A wordpress hook that needs to go before the body closing tag of the footer file
+
+In the interim, do the exercise below to practice.
+EXERCISE 1: 
+1. Create a new theme on in local
+2. add an index.php file 
+3. Create separate header and footer files and import them into your index.php file. 
+At this point, the theme should be visible in 'appearence' > themes, but labled as 'broken@ (no css file)
+4. Add the css and javascript files
+5. Create a functions.php file and use it to link your your css and js files to our theme.
 
 Start from 2.20 in for a partical re-cap
 
