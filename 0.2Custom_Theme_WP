@@ -3,12 +3,12 @@ Approximately 2.19 in so far 9th October 22
 
 Contents:
 ##############
-Intro, Adding a new post, Adding a new pluggin, Change the title and tag line, ADD YOUR CUSTOME THEME, The filepath for your site, Create a 
+Local, Adding a new post, Adding a new pluggin, Change the title and tag line, ADD YOUR CUSTOME THEME, The filepath for your site, Create a 
 Folder,  
 Create a css file,  Create an index.php file,   Add header and footer files,  Importing header and footer files,  EXERCISE,  Link our css and javascript files to our theme(wp_enqueue_script  wp_enqueue_style  functions.php),  
 ##############
 
-Intro:
+Local :
 Open Local
 Select Admin
 Your site url: http://<site name>.local/  (You need to 'start' the site in local first)
@@ -39,11 +39,12 @@ To change the website's 'Title' and 'Tag line':
 Open settings>general to then edit these and other settings.
 @@@@@@@@@@@@@@@@@@@@@@@@@@
 
-ADD YOUR CUSTOME THEME:
+ADD YOUR CUSTOM THEME:
 It's now time to add your own custom theme: (The GT Coding  site you created in this tutorial)
 Go to Local then choose the site title (left column), right click>Go to site folder.
 You can also click on the "Go to site folder" link below the main title of your site on the same page.
-Incidentally: Once the folder opens, the file path to your theme files are home/local sites/gtcoding>app>public>wp-content>themes>GTCoding
+Incidentally: Once the folder opens, the file path to your theme files are: 
+home/local sites/gtcoding>app>public>wp-content>themes>GTCoding
 
 Incidentally, the complete filepath to your site files in this instance is home>local sites>gtcoding>app>public>wp-content>themes>. 
 So each site you create requires its own individual wordpress environment including the default themes provided. 
@@ -51,9 +52,6 @@ So each site you create requires its own individual wordpress environment includ
 
 Create a folder in the Themes folder and name it GTCoding
 (You can see the new theme in WP Admin>Appearance>Themes  It will currently be visible under 'Broken Themes')
-
-
-
 
 NB: The code for the files below are in github>php_wp>boilerplate
 
