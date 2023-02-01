@@ -142,6 +142,34 @@ Practice Practice Practice:
 Practice adding wordpress themes using instructions here and the boilerplate file.
 Start from 2.20 in for a partical re-cap
 
+Custom Post Type:
+Add support for 'custom post type'
+Adding a post type called 'Project'
+He suggests that another item in the left menu list will appear on the admin page, called Projects!
+
+Instruction
+Posts > add new
+Ad a title and some new text to your new post.
+
+When you click 'Publish', the post will be savd to our database. Go ahead and do it.
+
+2.24 in
+
+"Before adding our custom post type, we will add some features to our theme.
+
+"We want to have an option where we can upload our featured image so whenever this post is displayed, we will have a thumbnail for it."
+
+We need to do this by adding some code to our functions.php file
+
+Below is the new code for this file
+
+//Adding theme support
+
+function gt_init() {
+	add_theme_support('post-thumbnails');
+}
+add_action('after_setup_theme', 'gt_init');
+
 
 
 
