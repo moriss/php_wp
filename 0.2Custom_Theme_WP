@@ -3,9 +3,8 @@ Approximately 2.19 in so far 9th October 22
 
 Contents:
 ##############
-Local, Adding a new post, Adding a new pluggin, Change the title and tag line, ADD YOUR CUSTOME THEME, The filepath for your site, Create a 
-Folder,  
-Create a css file,  Create an index.php file,   Add header and footer files,  Importing header and footer files,  EXERCISE,  Link our css and javascript files to our theme(wp_enqueue_script  wp_enqueue_style  functions.php),  
+Local,  Adding a new post, Adding a new pluggin, Change the title and tag line, ADD YOUR CUSTOM THEME, 
+Create a Folder,  Create a css file,  Create an index.php file,  Create a thumbnail,  Add header and footer files,  Importing header and footer files,  Address of new site:,  Link our css and javascript files to our theme ,   Link google fonts and font awsome to our webiste:, add_action to functions.php file, Header and footer wordpress hooks, Practice Practice Practice
 ##############
 
 Local :
@@ -97,8 +96,10 @@ https://www.youtube.com/watch?v=KibbYf9avko&t=43s
 
 Address of new site: 
 
-://<site name>.local/
+Site ://<site name>.local/
 Admin: http://<site name>.local/wp-admin/
+
+
 
 Link our css and javascript files to our theme:
 This is achieved through creating a file called functions.php. Then use of a wordpress hook called wp_enqueue_script or wp_enqueue_style within this file.
@@ -112,6 +113,7 @@ wp_enqueue_script("main", get_theme_file_uri('js/main.js'),  NULL,  microtime(),
 
 stopped here 2.16 in
 
+Link google fonts and font awsome to our webiste:
 We now need to link google fonts and font awsome to our webiste.
 2.20 in
 Before continuing at 2.20, refer to the 3.5_Adding_font_awsome file for more information in integrating font awesome into your wp site.
@@ -122,7 +124,7 @@ Before continuing at 2.20, refer to the 3.5_Adding_font_awsome file for more inf
 	//Below is for font-awesome
 	wp_enqueue_style('font_awsome' , '//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"');
 
-
+add_action to functions.php file:
 The functions.php file requires the following code to 'action' its function named 'gt_setup'
 //Below refers to the function above named 'gt_setup'
 //Parameter 1 = when the function should be executed
@@ -130,20 +132,14 @@ The functions.php file requires the following code to 'action' its function name
 add_action('wp_enqueue_scripts', 'gt_setup');
 
 
+Header and footer wordpress hooks:
 We now need to add code to the header and footer files.
 
 <?php wp_head();  ?> //A wordpress hook that needs to go within he header tags of the header file
 <?php wp_footer();  ?> //A wordpress hook that needs to go before the body closing tag of the footer file
 
-In the interim, do the exercise below to practice.
-EXERCISE 1: 
-1. Create a new theme on in local
-2. add an index.php file 
-3. Create separate header and footer files and import them into your index.php file. 
-At this point, the theme should be visible in 'appearence' > themes, but labled as 'broken@ (no css file)
-4. Add the css and javascript files
-5. Create a functions.php file and use it to link your your css and js files to our theme.
-
+Practice Practice Practice:
+Practice adding wordpress themes using instructions here and the boilerplate file.
 Start from 2.20 in for a partical re-cap
 
 
