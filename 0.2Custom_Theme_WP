@@ -163,7 +163,7 @@ We need to do this by adding some code to our functions.php file
 
 Below is the new code for this file
 
-//Adding theme support
+//Adding theme support for adding post thumbnails (featured images) to our posts.
 
 function gt_init() {
 	add_theme_support('post-thumbnails');
@@ -171,7 +171,9 @@ function gt_init() {
 add_action('after_setup_theme', 'gt_init');
 
 
+So if you now return to admin>post>add new, A new feature (bottom right) should allow you to 'Set featured image'
 
+2.26 in
 
 
 
