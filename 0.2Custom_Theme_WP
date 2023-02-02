@@ -4,7 +4,7 @@ Approximately 2.19 in so far 9th October 22
 Contents:
 ##############
 Local,  Adding a new post, Adding a new pluggin, Change the title and tag line, ADD YOUR CUSTOM THEME, 
-Create a Folder,  Create a css file,  Create an index.php file,  Create a thumbnail,  Add header and footer files,  Importing header and footer files,  Address of new site:,  Link our css and javascript files to our theme ,   Link google fonts and font awsome to our webiste:, add_action to functions.php file, Header and footer wordpress hooks, Practice Practice Practice
+Create a Folder,  Create a css file,  Create an index.php file,  Create a thumbnail,  Add header and footer files,  Importing header and footer files,  Address of new site:,  Link our css and javascript files to our theme ,   Link google fonts and font awsome to our webiste:, add_action to functions.php file, Header and footer wordpress hooks, Practice Practice Practice,  POST TYPE,  
 ##############
 
 Local :
@@ -142,10 +142,15 @@ Practice Practice Practice:
 Practice adding wordpress themes using instructions here and the boilerplate file.
 Start from 2.20 in for a partical re-cap
 
+
+POST TYPE:
+Below is next in the video. Its a bit all over the place. This sections initially deals with adding thumbnail upload functionality to posts. It also seems that we want to add an additional 'post type' called 'project'.
+#########
 Custom Post Type:
 Add support for 'custom post type'
 Adding a post type called 'Project'
-He suggests that another item in the left menu list will appear on the admin page, called Projects!
+He suggests that another item in the left menu list will appear on the admin page, called Projects???
+
 
 Instruction
 Posts > add new
@@ -155,7 +160,7 @@ When you click 'Publish', the post will be savd to our database. Go ahead and do
 
 2.24 in
 
-"Before adding our custom post type, we will add some features to our theme.
+"BEFORE ADDING OUR CUSTOM POST TYPE, we will add some features to our theme.
 
 "We want to have an option where we can upload our featured image so whenever this post is displayed, we will have a thumbnail for it."
 
