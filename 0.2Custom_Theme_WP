@@ -138,9 +138,15 @@ We now need to add code to the header and footer files.
 <?php wp_head();  ?> //A wordpress hook that needs to go within he header tags of the header file
 <?php wp_footer();  ?> //A wordpress hook that needs to go before the body closing tag of the footer file
 
+
+
+
 Practice Practice Practice:
 Practice adding wordpress themes using instructions here and the boilerplate file.
 Start from 2.20 in for a partical re-cap
+
+
+
 
 
 POST TYPE:
@@ -156,11 +162,11 @@ Instruction
 Posts > add new
 Ad a title and some new text to your new post.
 
-When you click 'Publish', the post will be savd to our database. Go ahead and do it.
+When you click 'Publish', the post will be saved to our database. Go ahead and do it.
 
 2.24 in
 
-"BEFORE ADDING OUR CUSTOM POST TYPE, we will add some features to our theme.
+"BEFORE CREATING OUR CUSTOM POST TYPE, we will add some features to our theme.
 
 "We want to have an option where we can upload our featured image so whenever this post is displayed, we will have a thumbnail for it."
 
@@ -178,7 +184,7 @@ add_action('after_setup_theme', 'gt_init');
 
 So if you now return to admin>post>add new, A new feature (bottom right) should allow you to 'Set featured image'
 
-2.26 in
+2.26 in. Adding some more features to our theme.
 
 
 
