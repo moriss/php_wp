@@ -1,10 +1,12 @@
 Below is from https://www.youtube.com/watch?v=KibbYf9avko&t=43s tutorial
-Approximately 2.19 in so far 9th October 22
+Approximately 2.32 in so far 1st march 23
+Need to upload this to 
+github.com/moriss/php_wp/0.2Custom_Theme_WP
 
 Contents:
 ##############
 Local,  Adding a new post, Adding a new pluggin, Change the title and tag line, ADD YOUR CUSTOM THEME, 
-Create a Folder,  Create a css file,  Create an index.php file,  Create a thumbnail,  Add header and footer files,  Importing header and footer files,  Address of new site:,  Link our css and javascript files to our theme ,   Link google fonts and font awsome to our webiste:, add_action to functions.php file, Header and footer wordpress hooks, Practice Practice Practice,  POST TYPE,  
+Create a Folder,  Create a css file,  Create an index.php file,  Create a thumbnail,  Add header and footer files,  Importing header and footer files,  Address of new site:,  Link our css and javascript files to our theme ,   Link google fonts and font awsome to our webiste:, add_action to functions.php file, Header and footer wordpress hooks, Practice Practice Practice,  Custom Post Type ,  BEFORE CREATING OUR CUSTOM POST TYPE , title tag feature , html5 theme support , BACK TO CUSTOM POST TYPE , 
 ##############
 
 Local :
@@ -154,23 +156,29 @@ Below is next in the video. Its a bit all over the place. This sections initiall
 #########
 Custom Post Type:
 Add support for 'custom post type'
-Adding a post type called 'Project'
-He suggests that another item in the left menu list will appear on the admin page, called Projects???
+(The post type of regular posts is post. You can now create your own to indicate the type of content created)
+
+Adding a post type called 'Projects'
+After doing this, another item in the left menu list will appear on the admin page, called Projects.
 
 
-Instruction
+Go ahead and do the following. You are simply adding a new post to the current and default 'post'type.
 Posts > add new
 Ad a title and some new text to your new post.
 
-When you click 'Publish', the post will be saved to our database. Go ahead and do it.
+When you click 'Publish', the post will be saved to our database. 
 
 2.24 in
 
-"BEFORE CREATING OUR CUSTOM POST TYPE, we will add some features to our theme.
+"BEFORE CREATING OUR CUSTOM POST TYPE , we will add some features to our theme. These features should be available to ALL post types.
+
+
 
 "We want to have an option where we can upload our featured image so whenever this post is displayed, we will have a thumbnail for it."
 
+################################################################
 We need to do this by adding some code to our functions.php file
+################################################################
 
 Below is the new code for this file
 
@@ -186,6 +194,56 @@ So if you now return to admin>post>add new, A new feature (bottom right) should 
 
 2.26 in. Adding some more features to our theme.
 
+title tag feature
+
+Adding a feature for the title tag in the browser to allow it to change according to the page you are on.
+
+The first step is to remove the title tag from the header page. Delete it completely!
+
+The new theme to be added is called (unsurprisingly) 'title tag'.
+
+so, Add:
+add_theme_support('title-tag'); within the:
+gt_init function (in the functions.php file).
+
+A new default tagline will now appear. The source of it can be found in admin>settings>general setting.tagline. So this is where it comes from. As pages are created, the title will change according to the page title.
 
 
+html5 theme support
 
+Allows for html5 attributes for comment forms and search forms.
+
+add_theme_support('html5', 
+array('comment-list , 'comment-form' , 'search-form')
+); 
+//The array displays where html5 is to be implemented.
+
+
+BACK TO CUSTOM POST TYPE
+So, add a new post-type called 'projects'
+
+In the functions.php file
+################################################################################################################################
+//Your newly created custom post type called Projects
+function gt_custom_post_type(){
+	//register_post_type creates a new menu item in admin and allows you to create multiple projects as required. 
+	register_post_type('project' , // A value within "register_post_type" parameters
+	array(//An array within "register_post_type" parameters
+			'rewrite' => array('slug' => 'projects'),//slug is the part of your URL that you can edit when writing or editing a post
+			'labels' => array(//An array within an array associating keywords with values within "register_post_type" parameters
+									'name' => 'Projects' , //Name of the item on the admin menu
+									'singular_name' => 'Project' ,
+									'add_new_item' => 'Add New Project' ,
+									'edit_item' => 'Edit Project'
+									) ,
+									
+			'menu-icon' => 'dashicons-clipboard' ,//add an icon for our post type (found at developer.wordpress.org  put dashicons into the searchbar to search through the different icons.
+			'public' => true, //Make this custom post type public. This can be kept private ie if it is only for admin.
+			'has_archive' => true,//Allows you to filter by date, author, categories etc
+			'supports' => array(
+			'title' , 'thumbnail' , 'editor' , 'excerpt' , 'comments'
+			)
+		) 
+);
+}//function end
+add_action('init' , 'gt_custom_post_type'); //final step is to add an action to run this function
