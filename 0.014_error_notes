@@ -18,6 +18,11 @@ all  is meant to be a string (to be used here as array key). Strings in PHP must
 Wordpress Specific:
 Any errors in the function file stops the admin and site pages from loading from 'Local'.
 
+1st march 23
+wordpress code error file:
+//The thing to check here is that NO ending brackets )  other than the last one, has a semi colon after it. 
+function name_of_function(){ keyword(everything such as strings and associative arrays go in this parameter. Embeded parameters ie () do not have an ending semi colon. Only this end one.  );  }
+
 
 27 oct 22
 This page isn’t workinglocalhost is currently unable to handle this request. HTTP ERROR 500
