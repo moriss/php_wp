@@ -1,7 +1,9 @@
-# php
+#
 
 Go straight to 0.2Custom_Theme_WP to work your way through the youtube course below.
 This repo is initially based on the wordpress/php tutorial on youtube https://www.youtube.com/watch?v=KibbYf9avko&t=43s  aka GTCoding
+If you click on 'show more' under the video it gives you all the time-lines for each area of the course. Very handy!
+The video comes from freeCodeCamp.org
 
 ##Update 24th January 23
 This guy seems to cover alot with wordpress and introduced me to using a child site to add font awsome icons.
