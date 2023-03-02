@@ -14,6 +14,10 @@ Version: 1
 ###############
 
 
+
+
+
+
 //index.php file
 //index.php initial contents
 ################
@@ -22,6 +26,10 @@ Version: 1
 <?php get_footer();?>
 <!--////Wp specific functions to insert above code into the index.php (or any other) file. -->
 #################
+
+
+
+
 
 
 //Header file
@@ -42,10 +50,14 @@ Version: 1
     </header>   
     #################
     
+	
+	
+	
     
-Footer file
-Footer filename: footer.php
-Footer file code
+    
+//Footer file
+//Footer filename: footer.php
+//Footer file code
 #####################
     <footer>
       <p>Foooter goes here</p>
@@ -55,6 +67,12 @@ Footer file code
 </body>
 </html>
 #########################
+
+
+
+
+
+
 
 
 functions.php
@@ -87,6 +105,33 @@ function gt_setup(){
 //parameter 2 = The name of the function
 add_action('wp_enqueue_scripts', 'gt_setup');
 
+
+
+
+
+//Your newly created custom post type called Projects as per https://www.youtube.com/watch?v=KibbYf9avko&t=43s     2.32 in
+function gt_custom_post_type(){
+	//register_post_type creates a new menu item in admin and allows you to create multiple projects as required. 
+	register_post_type('project' , // A value within "register_post_type" parameters
+	array(//An array within "register_post_type" parameters
+			'rewrite' => array('slug' => 'projects'),//slug is the part of your URL that you can edit when writing or editing a post
+			'labels' => array(//An array within an array associating keywords with values within "register_post_type" parameters
+									'name' => 'Projects' , //Name of the item on the admin menu
+									'singular_name' => 'Project' ,
+									'add_new_item' => 'Add New Project' ,
+									'edit_item' => 'Edit Project'
+									) ,
+									
+			'menu-icon' => 'dashicons-clipboard' ,//add an icon for our post type (found at developer.wordpress.org  put dashicons into the searchbar to search through the different icons.
+			'public' => true, //Make this custom post type public. This can be kept private ie if it is only for admin.
+			'has_archive' => true,//Allows you to filter by date, author, categories etc
+			'supports' => array(
+			'title' , 'thumbnail' , 'editor' , 'excerpt' , 'comments'
+			)
+		) 
+);
+}//function end
+add_action('init' , 'gt_custom_post_type'); //final step is to add an action to run this function
 
 ?>
 ######################
