@@ -107,6 +107,18 @@ add_action('wp_enqueue_scripts', 'gt_setup');
 
 
 
+//Adding theme support for adding blog post thumbnails to our posts.
+
+function gt_init() {
+	add_theme_support('post-thumbnails');
+	add_theme_support('title-tag');
+	add_theme_support('html5', 
+array('comment-list' , 'comment-form' , 'search-form')
+); 
+//The array displays where html5 is to be implemented.
+}
+add_action('after_setup_theme', 'gt_init');
+
 
 
 //Your newly created custom post type called Projects as per https://www.youtube.com/watch?v=KibbYf9avko&t=43s     2.32 in
