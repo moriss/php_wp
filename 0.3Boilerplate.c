@@ -120,14 +120,14 @@ array('comment-list' , 'comment-form' , 'search-form')
 add_action('after_setup_theme', 'gt_init');
 
 
-
+//Projects Post Type
 //Your newly created custom post type called Projects as per https://www.youtube.com/watch?v=KibbYf9avko&t=43s     2.32 in
 function gt_custom_post_type(){
 	//register_post_type creates a new menu item in admin and allows you to create multiple projects as required. 
 	register_post_type('project' , // A value within "register_post_type" parameters
 	array(//An array within "register_post_type" parameters
 			'rewrite' => array('slug' => 'projects'),//slug is the part of your URL that you can edit when writing or editing a post
-			'labels' => array(//An array within an array associating keywords with values within "register_post_type" parameters
+			'labels' => array(//Lables (Names) for each item.
 									'name' => 'Projects' , //Name of the item on the admin menu
 									'singular_name' => 'Project' ,
 									'add_new_item' => 'Add New Project' ,
