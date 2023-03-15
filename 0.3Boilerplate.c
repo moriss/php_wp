@@ -127,7 +127,7 @@ function gt_custom_post_type(){
 	register_post_type('project' , // A value within "register_post_type" parameters
 	array(//An array within "register_post_type" parameters
 			'rewrite' => array('slug' => 'projects'),//slug is the part of your URL that you can edit when writing or editing a post
-			'labels' => array(//Lables (Names) for each item.
+			'labels' => array(//Lables (Names) for each following item.
 									'name' => 'Projects' , //Name of the item on the admin menu
 									'singular_name' => 'Project' ,
 									'add_new_item' => 'Add New Project' ,
@@ -137,7 +137,7 @@ function gt_custom_post_type(){
 			'menu-icon' => 'dashicons-clipboard' ,//add an icon for our post type (found at developer.wordpress.org  put dashicons into the searchbar to search through the different icons.
 			'public' => true, //Make this custom post type public. This can be kept private ie if it is only for admin.
 			'has_archive' => true,//Allows you to filter by date, author, categories etc
-			'supports' => array(
+			'supports' => array(//What should be supported by this custom post type. (Items it will enable)
 			'title' , 'thumbnail' , 'editor' , 'excerpt' , 'comments'
 			)
 		) 
