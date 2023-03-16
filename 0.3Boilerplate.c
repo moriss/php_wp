@@ -70,7 +70,10 @@ Version: 1
 
 
 
-
+.js
+##################
+alert("hello from the js file"); //To test the js file is linking properly to your theme
+#################
 
 
 
