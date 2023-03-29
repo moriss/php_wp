@@ -1,3 +1,14 @@
+For importing google fonts, The functions page has:
+//fonts.googleapis.com/css2....  as a link, instead of:
+https://fonts.googleapis.com/css2. The tutorial misses out the 'https' and I don't know why. 
+
+This link may help with importing google fonts generally;
+https://wordpress.org/support/topic/new-google-fonts-url-incompatible-with-wp_enqueue_style/
+
+
+
+
+
 In the code below we have 'microtime'. 
 The section in the tutorial  https://www.youtube.com/watch?v=KibbYf9avko&t=43s  is approximatley 2.18 in
 This -I think- relates to having your page update when you refresh. Best when developing your site
