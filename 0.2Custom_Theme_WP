@@ -6,7 +6,7 @@ github.com/moriss/php_wp/0.2Custom_Theme_WP
 Contents:
 ##############
 Local,  Adding a new post, Adding a new pluggin, Change the title and tag line, ADD YOUR CUSTOM THEME, 
-Create a Folder,  Create a css file,  Create an index.php file,  Create a thumbnail,  Add header and footer files,  Importing header and footer files,  Address of new site:,  Link our css and javascript files to our theme ,   Link google fonts and font awsome to our webiste:, add_action to functions.php file, Header and footer wordpress hooks, Practice Practice Practice,  Custom Post Type ,  BEFORE CREATING OUR CUSTOM POST TYPE , title tag feature , html5 theme support , BACK TO CUSTOM POST TYPE , 
+Create a Folder,  Create a css file,  Create an index.php file,  Create a thumbnail,  Add header and footer files,  Importing header and footer files,  Address of new site:,  Link our css and javascript files to our theme ,   Link google fonts and font awsome to our webiste:, add_action to functions.php file, Header and footer wordpress hooks, Practice Practice Practice,  Custom Post Type ,  BEFORE CREATING OUR CUSTOM POST TYPE , Adding theme support , featured image , title tag feature , html5 theme support , BACK TO CUSTOM POST TYPE , Wordpress Templates , 
 ##############
 
 Local :
@@ -247,3 +247,9 @@ function gt_custom_post_type(){
 );
 }//function end
 add_action('init' , 'gt_custom_post_type'); //final step is to add an action to run this function
+
+
+
+
+Wordpress Templates
+
