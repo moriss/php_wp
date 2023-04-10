@@ -1,5 +1,28 @@
 Pasted Error Messages with Fixes
 
+
+############
+Fatal error: Uncaught Error: Call to undefined function the_comment_form() in /home/maurizio/Local Sites/grange/app/public/wp-content/themes/grange/single.php on line 17
+( ! ) Error: Call to undefined function the_comment_form() in /home/maurizio/Local Sites/grange/app/public/wp-content/themes/grange/single.php on line 17
+
+Above refers to the code below on line 17
+
+<?php the_content(); ?>
+		<?php the_comment_form(); ?>
+  
+  The way to fix it is by adding single quotes as follows:
+  
+  <?php 'the_content()'; ?>
+		<?php 'the_comment_form()'; ?>
+  
+  It only seems to pick on these two but not other hooks???
+####################
+  
+  
+
+10th April 2023
+Error Message
+
 25 jan 23
 ################
 Errors Solved
