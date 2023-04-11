@@ -266,8 +266,8 @@ singular.php is the next template up from the default index.php. This will 'catc
 The next step-up is a)single.php for posts and b)page.php for pages. 
 This is useful if you want to differentiate between the look of a single post and a single page.
 
-The next step up could be the use of a 'slug' (after the last forward slash in the url).
-In the case of a page, the 'About' can be specifically identified and given its own template by using a slug. [In the case of the 'About' page, the slug is the 'about' string at the end of the url in your 'grange' website.
+The next step-up could be the use of a 'slug' (after the last forward slash in the url).
+In the case of a page, the 'About' can be specifically identified and given its own template by using a slug. [In the case of the 'About' page, the slug is the 'about' string at the end of the url in your 'grange' website].
 
 So to find the slug, go to the page in your admin and hover > view > to reveal the page and its slug (as I said previously) at the end of the url.
 
