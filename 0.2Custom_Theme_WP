@@ -273,8 +273,13 @@ So to find the slug, go to the page in your admin and hover > view > to reveal t
 
 Blue laptop's desktop has a wordpress hierarchy image that you can use as a guide.
 
-Below is from
+Other References
 https://www.usablewp.com/learn-wordpress/building-the-blog/building-a-single-post-page/
+Quote from: easywp.com/blog/wordpress-template-hierarchy-explained
+Intro: The hierarchy is a system to determine which template file is required to display a selected web page on your site. The files served up are based on the type of page to be displayed. In wordpress, web pages can be displayed as a 'page', 'post', 'catergory page', 'search page'. 
+A web page will also pull up several different template files when it loads. EG: if a web page needs to have a sidebar, then the sidebar.php template file will load. These 'Template Partials' are 'header', 'footer', 'sidebar'.
+
+So if you now add a page via the wp admin, it should be served up by page.php if you created a file with this name. Test this now!
 
 Building a single post page
 If you click on any blog post from the blog posts index page or archive pages, WordPress will take you a page where you can read the entire blog post.
