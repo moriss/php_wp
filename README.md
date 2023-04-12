@@ -1,6 +1,7 @@
 #
 
-Go straight to 0.2Custom_Theme_WP to work your way through the youtube course below.
+Go straight to 0.2Custom_Theme_WP to work your way through the youtube course below. 0.2Custom_Theme_WP is a comprehensive guide that also refers to other files within this repo as you put your wordpress site together. You also have written material to run alongside these files.
+
 This repo is initially based on the wordpress/php tutorial on youtube https://www.youtube.com/watch?v=KibbYf9avko&t=43s  aka GTCoding
 If you click on 'show more' under the video it gives you all the time-lines for each area of the course. Very handy!
 The video comes from freeCodeCamp.org
