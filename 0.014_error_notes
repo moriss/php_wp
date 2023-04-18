@@ -1,5 +1,23 @@
 Pasted Error Messages with Fixes
 
+18th april 23
+###################
+Error message:
+Parse error: syntax error, unexpected ''posts_per_page''
+
+SO HERE, YOU FORGOT THE COMMA AFTER 'project' 
+$args = array( //Create a variable with an associative array that points to the 'project' post type you created
+ 	 'post_type'  => 'project' //associative array
+ 	 'posts_per_page' => 2,
+	 
+ALSO
+Parse error: syntax error, unexpected ';', expecting ')' 
+You placed a semie colon wronly after the 2. (2;)
+
+And finaly, it doesn't matter whether or not you place a comma after the 2. It works with or without.
+
+##################
+
 
 ############
 Fatal error: Uncaught Error: Call to undefined function the_comment_form() in /home/maurizio/Local Sites/grange/app/public/wp-content/themes/grange/single.php on line 17
