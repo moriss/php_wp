@@ -39,3 +39,14 @@
 		<?php  //Amazingly, you need to open and close the php to accomodate the last curly brace to end the function.
 			}
 		?>
+
+			
+// Below is a customised website query to specify how many posts should be displayed on the page
+// All that's been added is   'posts_per_page' => 2,  
+<?php  
+  $args = array( //Create a variable with an associative array that points to the 'project' post type you created
+ 	 'post_type'  => 'project', //associative array
+ 	 'posts_per_page' => 2,
+ );
+
+//NB; Changing post_type to 'post' [currently 'projects', changes the post list accordingly]. 
