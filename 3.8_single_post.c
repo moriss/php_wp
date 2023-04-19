@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<h1>single.php</h1>
+<h1>either single.php, singular.php  or  index.php </h1>
 
 <?php
 	while(have_posts()) {  //NB have_posts require comments
