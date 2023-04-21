@@ -1,5 +1,5 @@
 //The below code sits between the header and footer hooks on the index page.
-//First block of code is for the defaults 'post' list in admin. 
+//First block of code is for the defaults 'post' list in admin. It simply lists the posts as is. 
 <?php  
 	while(have_posts()) {  //The condition of the while loop is that posts exist.
 			the_post(); //For now, I'm labelling this a 'gateway' -as such- into out-putting below.
@@ -19,10 +19,12 @@
 
 
 
-//This next block is for a newly created 'Project' I happen to call 'projects' that can also have posts written for it. 
+//This next block allows for wordpress customised queries including choice of posts to be displayed, (post type) , and number of posts per page (posts per page) 
+//
 <?php  
   $args = array( //Create a variable with an associative array that points to the 'project' post type you created
- 	 'post_type'  => 'project' //associative array
+ 	 'post_type'  => 'project' //associative array declaring which post to display
+	 'posts_per_page' => 2, // How many posts per page should be displayed
  );
  
  $blogposts = new WP_Query($args);
@@ -40,13 +42,3 @@
 			}
 		?>
 
-			
-// Below is a customised website query to specify how many posts should be displayed on the page
-// All that's been added is   'posts_per_page' => 2,  
-<?php  
-  $args = array( //Create a variable with an associative array that points to the 'project' post type you created
- 	 'post_type'  => 'project', //associative array
- 	 'posts_per_page' => 2,
- );
-
-//NB; Changing post_type to 'post' [currently 'projects', changes the post list accordingly]. 
