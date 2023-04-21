@@ -283,8 +283,25 @@ So if you now add a page via the wp admin, it should be served up by page.php (i
 
 
 
-Adding a list of posts to your index.php page.
-NEED TO DO THIS NEXT. 
+
+
+
+Adding a list of posts to your index.php page  
+
+This uses a while loop. The condition is that 'while posts exist...'
+This is a page (index.php) that shows a list of posts available to click through to. IE, A list of posts you can choose from.
+
+The items involved here are:
+have posts, the post, the title, the excerpt and permalink. 
+
+The code for this can be found in git/php_wp/post_list
+
+You can also create a list for other projects. In your case, you created a custom post type named 'projects'. The code for how to list these are in the post_list file.
+
+The main items are array, post type, have post and the post with variable names.
+
+You can also specify how many posts per page are displayed using post per page 
+
 
 
 
@@ -294,7 +311,14 @@ Adding a single post page
 If you click on any blog post from the blog post's index page, WordPress will take you to a page where you can read the entire blog post.
 This page is served up by either single.php, singular.php or index.php files.  The default is the latter, then it moves to singular.php if no single.php file exists. Finally, if you have created a single.php file, then this is the file that serves it up. 
 
-The code to display the page requires a loop. The code can be seen at  single_post.c.  
+The code to display the page requires a loop.
+
+Items here are: have posts, the post, the title, the author, get the post thumbnail, the content and the comment form. 
+
+Please bear in mind you need to upload a featured image via admin for the post thumb nail to display. Just click on the post and upload a featured image. Remember to 'Update' your post so the FI is properly added. 
+
+The code for this single post page is in git/php_wp/single_post.c
+
 
 
 
