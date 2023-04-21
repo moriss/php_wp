@@ -296,11 +296,12 @@ have posts, the post, the title, the excerpt and permalink.
 
 The code for this can be found in git/php_wp/post_list
 
-You can also create a list for other projects. In your case, you created a custom post type named 'projects'. The code for how to list these are in the post_list file.
+Customised arguments
+You need to change the code a bit if you want to display a different list of posts and/or set a specific number of posts per page.
+In your case, you created a custom post type named 'projects'. The code for how to list these are also in the post_list file. These require variables with arrays. 
+The main items here are $args (a variable with and array), a second variable that takes the first variable as a WP_Query argument, a while loop, with have posts, post-of-choice (in my case, 'the post' or 'project') and posts per page. 
 
-The main items are array, post type, have post and the post with variable names.
-
-You can also specify how many posts per page are displayed using post per page 
+Finally, we have permalink, the title and the excerpt
 
 
 
@@ -318,15 +319,6 @@ Items here are: have posts, the post, the title, the author, get the post thumbn
 Please bear in mind you need to upload a featured image via admin for the post thumb nail to display. Just click on the post and upload a featured image. Remember to 'Update' your post so the FI is properly added. 
 
 The code for this single post page is in git/php_wp/single_post.c
-
-
-
-
-
-
-
-
-
 
 
 
