@@ -15,8 +15,9 @@
 		?>
 
 
-
-
+//a) Post list has: while have posts, the post, the title, the excerpt
+//or
+// $1 array[post type, posts per page],  $2 WP Query($1),  $have posts,  $the post,   permalink,  title,  excerpt
 
 
 //This next block allows for wordpress customised queries including choice of posts to be displayed, (post type) , and number of posts per page (posts per page) 
@@ -30,7 +31,7 @@
  $blogposts = new WP_Query($args);
 
 	while($blogposts -> have_posts()) {  //The condition of the while loop is that posts exist.
-			$blogposts -> the_post(); //For now, I'm labelling this a 'gateway' -as such- into out-putting below.
+	      $blogposts -> the_post(); //For now, I'm labelling this a 'gateway' -as such- into out-putting below.
    //You need to close the php environment to allow the html h3 tags to work. ?>
    
    <a href="<?php the_permalink(); ?>" >
