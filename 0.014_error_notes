@@ -1,5 +1,13 @@
 Pasted Error Messages with Fixes
 
+contents: Displaying images , 
+
+Displaying images
+This image, placed in the header.php file ought to display as the logo. Can you spot the issue?
+<img src="<?php echo get_template_directory_uri(); ?> /img/logo.png" alt = "Grange Logo"/>
+No, I didn't think so. The issue that stops it displaying is the gap between the closing php tags and the following forward slash. So it should be:
+<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt = "Grange Logo"/>
+
 18th april 23
 ###################
 Error message:
