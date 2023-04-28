@@ -6,7 +6,7 @@ github.com/moriss/php_wp/0.2Custom_Theme_WP
 Contents:
 ##############
 Local,  Adding a new post, Adding a new pluggin, Change the title and tag line, ADD YOUR CUSTOM THEME, 
-Create a Folder,  Create a css file,  Create an index.php file,  Create a thumbnail,  Add header and footer files,  Importing header and footer files,  Address of new site:,  Link our css and javascript files to our theme ,   Link google fonts and font awsome to our webiste:, add_action to functions.php file, Header and footer wordpress hooks, Practice Practice Practice,  Custom Post Type['projects' ,  BEFORE CREATING OUR CUSTOM POST TYPE , Adding theme support , featured image , title tag feature , html5 theme support , BACK TO CUSTOM POST TYPE , Wordpress Templates ,  Adding a list of posts to your index.php page  ,  Adding a single post page  , Adding a front page ,  front-page.php  ,  Bring in you css, html and images , Updating header.php and footer.php ,  
+Create a Folder,  Create a css file,  Create an index.php file,  Create a thumbnail,  Add header and footer files,  Importing header and footer files,  Address of new site:,  Link our css and javascript files to our theme ,   Link google fonts and font awsome to our webiste:, add_action to functions.php file, Header and footer wordpress hooks, Practice Practice Practice,  Custom Post Type['projects' ,  BEFORE CREATING OUR CUSTOM POST TYPE , Adding theme support , featured image , title tag feature , html5 theme support , BACK TO CUSTOM POST TYPE , Wordpress Templates ,  Adding a list of posts to your index.php page  ,  Adding a single post page  , Adding a front page ,  front-page.php  ,  Bring in you css, html and images , Updating header.php and footer.php files ,  Header and footer hooks,   Importing header and footer files to front-page.php  ,
 ##############
 
 Local :
@@ -335,7 +335,7 @@ Now (from the admin dashboard) go to setting > reading. Change 'Your home page d
 
 
 front-page.php
-Create a file in your website route (where you also have index.php, header, footer etc) and name it front-page.php. The Wordpress site hierarchy will default to this page when someone visits your site. Test it works.
+Create a file in your website route (where you also have index.php, header, footer etc) and name it front-page.php. The Wordpress site hierarchy will default to this page when someone visits your site. Test that it works.
 
 
 Bring in you css, html and images
@@ -344,9 +344,10 @@ Paste all your index.html code over to the newly created front-page.php
 Copy all your images over to a folder named img. (You may need to create this folder if not already done so)
 
 
-Updating header.php and footer.php
-Move all the header code from the recently pasted code in front-pag.php to the header.php file. In my case, this is all the code above the 'banner' tag.
-Do the same with the footer by moving the footer code in front-page.php to the footer.php file.
+Updating header.php and footer.php files
+You are now beginning to move the relevant code over to the header and footer files you already created.
+So, move all the header code from the recently pasted code in front-pag.php, to the header.php file. In my case, this is all the code above the 'banner' tag.
+Do the same with the footer code by moving it from front-page.php to the footer.php file.
 
 
 Header and footer hooks
@@ -354,9 +355,9 @@ Add this code to the closing body tag in footer.php
 <?php wp_footer(); ?> 
 This identifies the code as footer code.
 
-The header requires a bit more work.
-This code: <?php wp_head(); ?> replaces all the 'link' tags [originaly in the index.html static site], related to css, font awsome, google fonts and js (which can now be grabbed from your functions.php file).
-So my understanding is that wp_head has two jobs. It identifies itself as header.php and also calls the code from the functions.php file.
+The header does something slightly differently.
+This code: <?php wp_head(); ?> to be placed in header.php, replaces all the 'link' tags [originaly in the index.html static site], related to css, font awsome, google fonts and js (which can now be grabbed from your functions.php file).
+So my understanding is that wp_head has two jobs. It identifies itself as header.php and also calls the link code from the functions.php file.
 
 
 
