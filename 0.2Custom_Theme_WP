@@ -6,7 +6,7 @@ github.com/moriss/php_wp/0.2Custom_Theme_WP
 Contents:
 ##############
 Local,  Adding a new post, Adding a new pluggin, Change the title and tag line, ADD YOUR CUSTOM THEME, 
-Create a Folder,  Create a css file,  Create an index.php file,  Create a thumbnail,  Add header and footer files,  Importing header and footer files,  Address of new site:,  Link our css and javascript files to our theme ,   Link google fonts and font awsome to our webiste:, add_action to functions.php file, Header and footer wordpress hooks, Practice Practice Practice,  Custom Post Type['projects' ,  BEFORE CREATING OUR CUSTOM POST TYPE , Adding theme support , featured image , title tag feature , html5 theme support , BACK TO CUSTOM POST TYPE , Wordpress Templates ,  Adding a list of posts to your index.php page  ,  Adding a single post page  , Adding a front page
+Create a Folder,  Create a css file,  Create an index.php file,  Create a thumbnail,  Add header and footer files,  Importing header and footer files,  Address of new site:,  Link our css and javascript files to our theme ,   Link google fonts and font awsome to our webiste:, add_action to functions.php file, Header and footer wordpress hooks, Practice Practice Practice,  Custom Post Type['projects' ,  BEFORE CREATING OUR CUSTOM POST TYPE , Adding theme support , featured image , title tag feature , html5 theme support , BACK TO CUSTOM POST TYPE , Wordpress Templates ,  Adding a list of posts to your index.php page  ,  Adding a single post page  , Adding a front page ,  front-page.php  ,  Bring in you css, html and images , 
 ##############
 
 Local :
@@ -322,12 +322,30 @@ The code for this single post page is in git/php_wp/single_post.c
 
 
 Adding a front page
-site front page is very high up in the hierarchy so be creating a front-page.php, the site ,by default, will open in this page. Similar to the index.html in a static site.
+site front page is very high up in the hierarchy so by creating a front-page.php, the site ,by default, will open in this page. Similar to the index.html in a static site.
 
-In this guide, we are 'transferring' the static gtcoding site we created earlier on in the video course to this wordpress website we are creating.
+So now we are 'transferring' the static gtcoding site we created earlier on in the video course to this wordpress website we are creating.
 
 The static site is located at: blue laptop > desktop > projects > wordpress > my wordpress site
-The wordpress files are located at: home > local sites > grange > app > public > content > theme > grange
+The wordpress website files are located at: home > local sites > grange > app > public > content > theme > grange
+
+So firstly we need to add a new page within admin, calling in 'Home'. Whilst you're at it, create another page called 'blog'. Just delete any sample pages you previously created (just to keep things neat and tidy)
+Now (from the admin dashboard) go to setting > reading. Change 'Your home page displays' drop down options to 'static page' and select 'Home' for the 'Home page' drop down option. Also select 'blog' for the 'post page' drop down option.
+
+
+
+front-page.php
+Create a file in your website route (where you also have index.php, header, footer etc) and name it front-page.php. The Wordpress site hierarchy will default to this page when someone visits your site. Test it works.
+
+
+Bring in you css, html and images
+Paste all your css code from your static version of the site into the wp route folder's css file.
+Paste all your index.html code over to the newly created front-page.php
+Copy all your images over to a folder named img. (You may need to create this folder if not already done so)
+
+
+
+
 
 
 
