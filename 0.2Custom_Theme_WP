@@ -360,8 +360,12 @@ So my understanding is that wp_head has two jobs. It identifies itself as header
 
 
 
-Importing header and footer
-Refer to your code map for a better visual and also the  import_headerfooter files
+Importing header and footer files to front-page.php
+Refer to your pencilled code map for a better visual. Below is the code
+
+Add this to the top and bottom (respectively) to your front-page.php  file
+<?php get_header(); ?>
+<?php get_footer(); ?>
 
 
 
