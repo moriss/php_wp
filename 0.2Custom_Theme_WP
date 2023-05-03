@@ -383,7 +383,8 @@ Menu links & other links
            
 Display post on front page
 In your example, it sits within the 'section' ID
-Code and explanation for this is in github/post_list.c  file
+Items for the image are: the_permalink, get_the_post_thumbnail_url
+Items for description are: the_permalink, the_title, trim_words(get_the_excerpt)
 
 
 
