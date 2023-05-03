@@ -1,5 +1,5 @@
 //Contents:
-//css file [initial contents] ,   index.php file [get_header,  html tag,  get_footer ],    header.php file ,  footer.php file ,  js file ,  functions.php file ,  Blog Post index page 
+//css file [initial contents] ,   get_header /get_footer ,    header.php file ,  footer.php file ,  js file ,  functions.php file ,  Blog Post index page 
 
 //css file
 //css file Initial contents
@@ -17,12 +17,12 @@ Version: 1
 
 
 
+//get_header /get_footer
+//For index.php, front page or any other page you want the header and footer files to load.
 
-//index.php file
-//index.php initial contents
 ################
 <?php get_header();?>
-<h1>Hi from index.php</h1>
+//main content
 <?php get_footer();?>
 <!--////Wp specific functions to insert above code into the index.php (or any other) file. -->
 #################
