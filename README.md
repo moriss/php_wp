@@ -1,4 +1,8 @@
-#
+#########
+Repo Contents: 
+error notes  ,  XAMPP  ,  Early_GTCoding_Guide  ,  Early_GTCoding_Practice  ,  Local_WP  ,  * Custom_Theme_WP *  ,  Important  ,  code.c   ,  Boilerplate.c  ,  Adding_font_awsome  ,  include.php  ,  post_list.c  ,  single_post.c  ,  Admin_user_interface  ,  images.c  
+#########
+
 
 Go straight to 0.2Custom_Theme_WP to work your way through the youtube course below. 0.2Custom_Theme_WP is a comprehensive guide that also refers to other files within this repo as you put your wordpress site together. You also have written material to run alongside these files.
 
