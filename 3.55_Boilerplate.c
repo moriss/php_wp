@@ -1,5 +1,7 @@
+// This shows the code for setting up the initial wordpress files for your theme. 
+
 //Contents:
-//css file [initial contents] ,   get_header /get_footer ,    header.php file ,  footer.php file ,  js file ,  functions.php file ,  Blog Post index page 
+//css file [intro contents] ,   get_header /get_footer ,    header.php file ,  footer.php file ,  js file ,  functions.php file ,  Blog Post index page 
 
 //css file
 //css file Initial contents
