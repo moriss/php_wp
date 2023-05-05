@@ -50,6 +50,7 @@ Version: 1
     <header>
     <h1>Header</h1>
     </header>   
+    //Note that you do not inlude the closing body and html tags here. They go in the footer.
     #################
     
 	
