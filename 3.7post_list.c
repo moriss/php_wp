@@ -1,4 +1,4 @@
-//The below code sits between the header and footer hooks on the page you wish to display your list of posts.
+//The below code sits (usually) between the header and footer hooks on the page you wish to display your list of posts.
 //First block of code is for the defaults 'post' list in admin. It simply lists the posts as is. 
 //The second block of code has variables, variables with arrays and custome queries giving you more control over what is displayed, including a different list of posts altogether.
 
