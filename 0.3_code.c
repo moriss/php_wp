@@ -1,3 +1,5 @@
+// A general list of wp hooks/code with explanations
+
 //Finds the route of your wp site
 <?php echo get_template_directory_uri(); ?>
 //So this would be how you display an image from your img folder
@@ -18,3 +20,8 @@
   // This line of code goes wherever you want the header.php code to go
   // And below does exactly the same for the footer.php file
   <?php get_footer(); ?>
+
+  
+<img src="<?php echo get_the_post_thumbnail_url('get_the_ID'); ?>" //Gets your thumbnail image
+<?php echo wp_trim_words(get_the_excerpt(), 30); ?>//Trims the excerpt to 30 words
+
