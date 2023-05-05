@@ -155,18 +155,5 @@ add_action('init' , 'gt_custom_post_type'); //final step is to add an action to 
 
 	
 	
-// Blog Post index page
-//A list of your post's titles
-<?php  
-
-	while(have_posts()){  //The condition of the while loop is that posts exist.
-		the_post(); //For now, I'm labelling this a 'gateway' -as such- into out-putting below.
-  ?>//You need to close the php environment to allow the html h3 tags to work.  
-
-		<h3><?php the_title(); ?> </h3> //The h3 tags include embeded php code to output the post's titles
-		
-		<?php  //Amazingly, you need to open and close the php to accomodate the last curly brace to end the function.
-			}
-		?>
 
 
