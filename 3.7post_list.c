@@ -16,11 +16,16 @@
 		<?php  //Amazingly, you need to open and close the php to accomodate the last curly brace to end the function.
 			}
 		?>
-
-
 //a) Post list has: while have posts, the post, the title, the excerpt
+//for this, function.php requires:  add theme support, post thumbnails, title tag, html5(for comment list, comment-form and search form)
+//And  add_action
+
+
+
+
+
 //or
-// $1 array[post type, posts per page],  $2 WP Query($1),  $have posts,  $the post,   permalink,  title,  excerpt
+// $1 post type, posts per page),  $2 WP Query($1),  while h$ ave posts,   $ the post,   permalink,  title,  excerpt
 
 
 
