@@ -155,6 +155,8 @@ Start from 2.20 in for a partical re-cap
 
 Adding functionality to your posts  ,
 Adding  Features to our Posts , we will add some features to our posts. These features should be available to ALL post types.
+Briefly, These are:
+init add theme support (thumbnails)  ,  title tag  ,  html5 ,  array:comment-list , 'comment-form' , 'search-form'
 
 "We want to have an option where we can upload our featured image in admin so whenever this post is displayed, we will have the option to upload a thumbnail for it."
 
@@ -197,6 +199,23 @@ array('comment-list , 'comment-form' , 'search-form')
 
 
 Custom Post Type 
+Briefly, code is: 
+register post type  array:'rewrite'  array:'slug' 'projects', 'labels' array: 'name' 'singular_name' , 'add_new_item' 'Add New Project' ,'edit_item' 'Edit Project'
+'menu-icon'  'dashicons-clipboard' ,//add an icon for our post type (found at developer.wordpress.org  put dashicons into the searchbar to search through the different icons.
+			'public' => true, //Make this custom post type public. This can be kept private ie if it is only for admin.
+			'has_archive' => true,//Allows you to filter by date, author, categories etc
+			'supports' => array(
+			'title' , 'thumbnail' , 'editor' , 'excerpt' , 'comments'
+			)
+		) 
+);
+}//function end
+add_action('init' , 'gt_custom_post_type'); //final step is to add an action to run this function
+
+
+
+
+
 Add support for your 'custom post type' 
 (The post type of regular posts is post. You can now create your own to indicate the type of content created)
 
@@ -210,7 +229,8 @@ When you click 'Publish', the post will be saved to our database.
 2.24 in
 
 STOPPED HERE
-Add below to the  functions.php file  for: registering your new post type, re-write url option,  give options for:(name, add new project, edit, add icon, public/private option, then:functionality to add icons, set to public/private,  filter by date,  show:title, thumbnail, editor, excerpt, comments.
+Add below to the  functions.php file  for: 
+registering your new post type, re-write url option,  give options for:(name, add new project, editable, add icon, set to public/private, then:functionality to add icons, set to public/private,  filter by date,  show:title, thumbnail, editor, excerpt, comments.
 These functions are run via add action.
 
 Your newly created custom post type called Projects
