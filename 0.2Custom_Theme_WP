@@ -6,7 +6,12 @@ github.com/moriss/php_wp/0.2Custom_Theme_WP
 Contents:
 ##############
 Local,  Adding a new post, Adding a new pluggin, Change the title and tag line, ADD YOUR CUSTOM THEME, 
-Create a Folder,  Create a css file,  Create an index.php file,  Create a thumbnail,  Add header and footer files,  Importing header and footer files,  Address of new site:,  Link our css and javascript files to our theme ,   Link google fonts and font awsome to our webiste:, add_action to functions.php file, Header and footer wordpress hooks, Practice Practice Practice,  Custom Post Type intro ,  BEFORE CREATING OUR CUSTOM POST TYPE , Adding theme support , featured image , title tag feature , html5 theme support , BACK TO CUSTOM POST TYPE , Wordpress Templates ,  Adding a list of posts to your index.php page  ,  Adding a single post page  , Adding a front page ,  front-page.php  ,  Bring in you css, html and images , Updating header.php and footer.php files ,  Header and footer hooks ,   Importing header and footer files to front-page.php  ,  Menu links & other links  ,  Display post on front page , 
+Create a Folder,  Create a css file,  Create an index.php file,  Create a thumbnail,  Add header and footer files,  Importing header and footer files,  Address of new site:,  Link our css and javascript files to our theme ,   Link google fonts and font awsome to our webiste:, add_action to functions.php file, Header and footer wordpress hooks,   Adding a post index to a page  ,  
+
+Adding theme support  ,  
+Custom Post Type  ,  
+
+Adding theme support , featured image , title tag feature , html5 theme support , BACK TO CUSTOM POST TYPE , Wordpress Templates ,  Adding a list of posts to your index.php page  ,  Adding a single post page  , Adding a front page ,  front-page.php  ,  Bring in you css, html and images , Updating header.php and footer.php files ,  Header and footer hooks ,   Importing header and footer files to front-page.php  ,  Menu links & other links  ,  Display post on front page , 
 ##############
 
 
