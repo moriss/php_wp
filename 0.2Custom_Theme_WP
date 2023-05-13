@@ -150,19 +150,19 @@ We now need to add code to the header and footer files.
 
 
 
-Practice Practice Practice:
-Practice adding wordpress themes using instructions here and the boilerplate file.
-Start from 2.20 in for a partical re-cap
+Adding theme support
+This adds functionality to the default posts to include: post thumbnails, title tag, and html5 ,
 
+Briefly, These are: init, 
 
-
-
-
-Adding functionality to your posts  ,
-Adding  Features to our Posts , we will add some features to our posts. These features should be available to ALL post types.
-Briefly, These are:
-
-
+//Adding theme support for adding blog post thumbnails to our posts.
+//The array displays where html5 is to be implemented.
+function gr_init() {
+					add_theme_support('post-thumbnails');
+					add_theme_support('title-tag');
+					add_theme_support('html5',  array('comment-list' , 'comment-form' , 'search-form')); 
+						}
+add_action('after_setup_theme', 'gr_init');
 
 
 
