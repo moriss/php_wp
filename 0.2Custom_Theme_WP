@@ -198,7 +198,7 @@ add_action('after_setup_theme', 'gr_init');
 
 
 Custom Post Type 
-Here you are creating your own custome post type. 'post' is the default already available in the wp admin area. This custom post type will be added somewhere below it.
+Here you are creating your own custome post type. 'post' is the default already available in the wp admin area. This custom post type will be added somewhere below it (on the admin page left menu).
 This code is also available in custom_post_type.c
 //register_post_type creates a new menu item in admin and allows you to create multiple projects as required. 
 	//slug is the part of your URL that you can edit when writing or editing a post
@@ -226,51 +226,12 @@ add_action('init' , 'gr_custom_post_type'); //final step is to add an action to 
 
 
 
-Add support for your 'custom post type' 
-(The post type of regular posts is post. You can now create your own to indicate the type of content created)
-
-Adding a post type called 'Projects'
-After doing this, another item in the left menu list will appear on the admin page, called 'Projects'.
-Go ahead and do the following in admin. You are simply adding a new post to the current and default 'post'type.
-Posts > add new
-Ad a title and some new text to your new post.
-When you click 'Publish', the post will be saved to our database. 
-
 2.24 in
 
-STOPPED HERE
-Add below to the  functions.php file  for: 
-registering your new post type, re-write url option,  give options for:(name, add new project, editable, add icon, set to public/private, then:functionality to add icons, set to public/private,  filter by date,  show:title, thumbnail, editor, excerpt, comments.
-These functions are run via add action.
-
-Your newly created custom post type called Projects
-function gt_custom_post_type(){
-	register_post_type('project' , //creates a new menu item in admin and allows you to create multiple projects as required. 
-	array(//An array within "register_post_type" parameters
-			'rewrite' => array('slug' => 'projects'),//slug is the part of your URL that you can edit when writing or editing a post
-			'labels' => array(
-									'name' => 'Projects' , //Name of the item on the admin menu
-									'singular_name' => 'Project' ,
-									'add_new_item' => 'Add New Project' ,
-									'edit_item' => 'Edit Project'
-									) ,
-					
-			'menu-icon' => 'dashicons-clipboard' ,//add an icon for our post type (found at developer.wordpress.org  put dashicons into the searchbar to search through the different icons.
-			'public' => true, //Make this custom post type public. This can be kept private ie if it is only for admin.
-			'has_archive' => true,//Allows you to filter by date, author, categories etc
-			'supports' => array(
-			'title' , 'thumbnail' , 'editor' , 'excerpt' , 'comments'
-			)
-		) 
-);
-}//function end
-add_action('init' , 'gt_custom_post_type'); //final step is to add an action to run this function
 
 
-	
-	
-	
-	
+
+STOPPED HERE	
 	
 
 
@@ -341,6 +302,10 @@ Please bear in mind you need to upload a featured image via admin for the post t
 The code for this single post page is in git/php_wp/single_post.c
 
 
+
+
+
+
 Adding a front page
 site front page is very high up in the hierarchy so by creating a front-page.php, the site ,by default, will open in this page. Similar to the index.html in a static site.
 
@@ -352,10 +317,12 @@ The wordpress website files are located at: home > local sites > grange > app > 
 So firstly we need to add a new page within admin, calling in 'Home'. Whilst you're at it, create another page called 'blog'. Just delete any sample pages you previously created (just to keep things neat and tidy)
 Now (from the admin dashboard) go to setting > reading. Change 'Your home page displays' drop down options to 'static page' and select 'Home' for the 'Home page' drop down option. Also select 'blog' for the 'post page' drop down option.
 
-
-
 front-page.php
 Create a file in your website route (where you also have index.php, header, footer etc) and name it front-page.php. The Wordpress site hierarchy will default to this page when someone visits your site. Test that it works.
+
+
+
+
 
 
 Bring in you css, html and images
@@ -364,10 +331,14 @@ Paste all your index.html code over to the newly created front-page.php
 Copy all your images over to a folder named img. (You may need to create this folder if not already done so)
 
 
+
+
 Updating header.php and footer.php files
 You are now beginning to move the relevant code over to the header and footer files you already created.
 So, move all the header code from the recently pasted code in front-pag.php, to the header.php file. In my case, this is all the code above the 'banner' tag.
 Do the same with the footer code by moving it from front-page.php to the footer.php file.
+
+
 
 
 Header and footer hooks
@@ -378,6 +349,8 @@ This identifies the code as footer code.
 The header does something slightly differently.
 This code: <?php wp_head(); ?> to be placed in header.php, replaces all the 'link' tags [originaly in the index.html static site], related to css, font awsome, google fonts and js (which can now be grabbed from your functions.php file).
 So my understanding is that wp_head has two jobs. It identifies itself as header.php and also calls the link code from the functions.php file.
+
+
 
 
 
