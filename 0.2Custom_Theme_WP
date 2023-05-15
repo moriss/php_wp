@@ -6,7 +6,8 @@ github.com/moriss/php_wp/0.2Custom_Theme_WP
 Contents:
 ##############
 Local,  Adding a new post, Adding a new pluggin, Change the title and tag line, ADD YOUR CUSTOM THEME, 
-Create a Folder,  Create a css file,  Create an index.php file,  Create a thumbnail,  Add header and footer files,  Importing header and footer files,  Address of new site:,  Link our css and javascript files to our theme ,   Link google fonts and font awsome to our webiste:, add_action to functions.php file, Header and footer wordpress hooks,   Adding a post index to a page  ,  
+Create a Folder,  Create a css file,  Create an index.php file,  Create a thumbnail,  Add header and footer files,  Importing header and footer files,  Address of new site:,  Link our css and javascript files to our theme ,   Link google fonts and font awsome to our webiste:, add_action to functions.php file, Header and footer wordpress hooks,   
+Adding a post index to a page  ,  
 
 Adding theme support  ,  
 Custom Post Type  ,  
@@ -32,22 +33,33 @@ Here, you can select and 'Activate' different 'Themes' for your site
 
 Our next goal is to create our own new theme.
 
-@@@@@@@@@@@@@@@@@@@@@@@@@@
-Incidental: Adding a new post.
+
+
+
+Adding a new post.
 Select 'Posts' in Admin>Add New
 Go ahead and create a new post.
 By default, when you select 'Publish', it will show on the home page. 
 
-Incidental: Adding a new Plugin:
+
+
+Adding a new Plugin
+You don't need to do this, it's just an example of how to do it.
 click on Plugins>add new
 ('Contact form 7' is the plugin installed in the tuturial so go ahead and install it).
 Hovering over 'Contact' (Left column of Admin Page) then selecting 'Contact Forms', will take you to this newly installed Contact form 7 plugin. 
 
+
+
+
+Change websites Title and Tag line's
 To change the website's 'Title' and 'Tag line':
 Open settings>general to then edit these and other settings.
-@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-ADD YOUR CUSTOM THEME:
+
+
+
+ADD YOUR CUSTOM THEME
 It's now time to add your own custom theme: (The GT Coding  site you created in this tutorial)
 Go to Local then choose the site title (left column), right click>Go to site folder.
 You can also click on the "Go to site folder" link below the main title of your site on the same page.
@@ -58,6 +70,10 @@ Incidentally, the complete filepath to your site files in this instance is home>
 So each site you create requires its own individual wordpress environment including the default themes provided. 
 
 
+
+
+Add your files to your theme
+Here you will be adding style.css, index.php, header.php footer.php and a thumbnail
 Create a folder in the Themes folder and name it GTCoding
 (You can see the new theme in WP Admin>Appearance>Themes  It will currently be visible under 'Broken Themes')
 
@@ -84,11 +100,13 @@ Thumbnail (The image that is displayed on your theme in the Admin area).
 Save a thumbnail image of your choice, Name your image screenshot.png (Must be named in this way) and place it in your theme folder that contains your style.css and index.php files.
 This image will now appear in your theme thumbnail
 
-
-
 Add header and footer files:
 Create a file called header.php and footer.php inside your GTCoding theme folder. (Examples of these are in github>php_wp>boilerplate.
 Ad some html to both these files for later testing.
+
+
+
+
 
 Importing header and footer files
 Importing the header and footer files into our index.php file
@@ -100,29 +118,34 @@ Add this script to the index.php
 #####################
 
 
+
 2.12 in
 https://www.youtube.com/watch?v=KibbYf9avko&t=43s 
 
-Address of new site: 
 
+
+
+Address of new site: 
 Site ://<site name>.local/
 Admin: http://<site name>.local/wp-admin/
 
 
 
-Link our css and javascript files to our theme:
+Link our css and javascript files to our theme
 This is achieved through creating a file called functions.php. Then use of a wordpress hook called wp_enqueue_script or wp_enqueue_style within this file.
 Firstly create the file called functions.php  (This is a very usefull file we can do interesting things with in addition to adding our css and js files to our theme, such as adding a new categories to our posts and add new features to our theme and filters etc.)
-
 
 See boilerplate for explanations to the required code below.
 wp_enqueue_style('style', get_stylesheet_uri(), NULL,  microtime(), 'all');
 wp_enqueue_script("main", get_theme_file_uri('js/main.js'),  NULL,  microtime(),  true);
 
 
+
 stopped here 2.16 in
 
-Link google fonts and font awsome to our webiste:
+
+
+Link google fonts and font awsome to our webiste
 We now need to link google fonts and font awsome to our webiste.
 2.20 in
 Before continuing at 2.20, refer to the 3.5_Adding_font_awsome file for more information in integrating font awesome into your wp site.
@@ -133,12 +156,18 @@ Before continuing at 2.20, refer to the 3.5_Adding_font_awsome file for more inf
 	//Below is for font-awesome
 	wp_enqueue_style('font_awsome' , '//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"');
 
+
+
+
+
 add_action to functions.php file:
 The functions.php file requires the following code to 'action' its function named 'gt_setup'
 //Below refers to the function above named 'gt_setup'
 //Parameter 1 = when the function should be executed
 //parameter 2 = The name of the function
 add_action('wp_enqueue_scripts', 'gt_setup');
+
+
 
 
 Header and footer wordpress hooks:
@@ -150,13 +179,11 @@ We now need to add code to the header and footer files.
 
 
 
-Adding theme support
+
+Adding theme support to posts
 This adds functionality to the default posts to include: post thumbnails, title tag, and html5 ,
-
-Briefly, These are: init, 
-
-//Adding theme support for adding blog post thumbnails to our posts.
-//The array displays where html5 is to be implemented.
+the post thumbnails functionality adds and option in admin to upload a desried image as your post's thumbnail.
+It goes into functions.php
 function gr_init() {
 					add_theme_support('post-thumbnails');
 					add_theme_support('title-tag');
@@ -171,20 +198,31 @@ add_action('after_setup_theme', 'gr_init');
 
 
 Custom Post Type 
-Briefly, code is: 
-register post type  array:'rewrite'  array:'slug' 'projects', 'labels' array: 'name' 'singular_name' , 'add_new_item' 'Add New Project' ,'edit_item' 'Edit Project'
-'menu-icon'  'dashicons-clipboard' ,//add an icon for our post type (found at developer.wordpress.org  put dashicons into the searchbar to search through the different icons.
-			'public' => true, //Make this custom post type public. This can be kept private ie if it is only for admin.
-			'has_archive' => true,//Allows you to filter by date, author, categories etc
-			'supports' => array(
-			'title' , 'thumbnail' , 'editor' , 'excerpt' , 'comments'
-			)
-		) 
-);
-}//function end
-add_action('init' , 'gt_custom_post_type'); //final step is to add an action to run this function
-
-
+Here you are creating your own custome post type. 'post' is the default already available in the wp admin area. This custom post type will be added somewhere below it.
+This code is also available in custom_post_type.c
+//register_post_type creates a new menu item in admin and allows you to create multiple projects as required. 
+	//slug is the part of your URL that you can edit when writing or editing a post
+	//Lables (Names) for each following item.
+	//name = Name of the item on the admin menu
+	//menu icon : add an icon for our post type (found at developer.wordpress.org  put dashicons into the searchbar to search through the different icons.
+	//'public' Make this custom post type public. This can be kept private ie if it is only for admin.
+	//'has_archive' Allows you to filter by date, author, categories etc
+	// 'supports' What should be supported by this custom post type. (Items it will enable)
+function gr_custom_post_type(){
+	register_post_type('project', 
+			    array('rewrite' => array('slug' => 'projects'),
+			   'labels' => array('name' => 'Projects' , 'singular_name' => 'Project' , 
+			   'add_new_item' => 'Add New Project' ,
+			   'edit_item' => 'Edit Project'
+			          	     ) ,
+			   'menu-icon' => 'dashicons-clipboard' ,
+			   'public' => true, 'has_archive' => true, 
+			   'supports' => array('title' , 'thumbnail' , 'editor' , 'excerpt' , 'comments')
+			  )			  
+			   );
+			      }//function end
+add_action('init' , 'gr_custom_post_type'); //final step is to add an action to run this function
+?>
 
 
 
