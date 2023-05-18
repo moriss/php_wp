@@ -267,6 +267,7 @@ So if you now add a page via the wp admin, it should be served up by page.php (i
 
 
 
+
 Adding a list of posts to your index.php page  
 
 This uses a while loop. The condition is that 'while posts exist...'
@@ -277,8 +278,44 @@ have posts, the post, the title, the excerpt and permalink.
 
 The code for this can be found in git/php_wp/post_list
 
+
+
+
+
+Adding featured images and other functionality to your default posts:
+This code is set globally within your functions.php file
+function gr_init() {
+					add_theme_support('post-thumbnails');
+					add_theme_support('title-tag');
+					add_theme_support('html5',  array('comment-list' , 'comment-form' , 'search-form')); 
+						}
+add_action('after_setup_theme', 'gr_init'); 
+So, above is globally set. This means that future custom post types that your create will allow uploadable images, although you need to make sure you add this support in your custome code. (see below)
+
+stopped here
+
 Customised arguments
-You need to change the code a bit if you want to display a different list of posts and/or set a specific number of posts per page.
+You need to add code in functions.php if you want to display a different list of posts and/or set a specific number of posts per page and change the length of the post's exerpt etc.
+
+Adding 'featured-image/post thumbnail functionality to your posts. Ie: the ability to upload and image for your post.
+
+This requires 2 steps in cases where you create/register your own custom post type. If you are not doing this and instead just using the default 'posts', you need only do step 1;
+
+The first step is to set this functionality globably.
+Below is for the functions.php file.
+
+add_theme_support('post-thumbnails');
+This sets the functionality globally and not only needs to be in place for the default 'posts' but is also required for setting up your own custom post (below).
+
+
+And now you need to add it to your registered post type.
+'supports' => array('thumbnail' , 'editor' , .... )
+You input this into your register post type's parameters.
+
+So the first step is to 
+
+
+
 In your case, you created a custom post type named 'projects'. The code for how to list these are also in the post_list file. These require variables with arrays. 
 The main items here are $args (a variable with and array), a second variable that takes the first variable as a WP_Query argument, a while loop, with have posts, post-of-choice (in my case, 'the post' or 'project') and posts per page. 
 
