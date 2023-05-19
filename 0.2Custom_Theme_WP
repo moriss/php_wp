@@ -5,14 +5,30 @@ github.com/moriss/php_wp/0.2Custom_Theme_WP
 
 Contents:
 ##############
-Local,  Adding a new post, Adding a new pluggin, Change the title and tag line, ADD YOUR CUSTOM THEME, 
-Create a Folder,  Create a css file,  Create an index.php file,  Create a thumbnail,  Add header and footer files,  Importing header and footer files,  Address of new site:,  Link our css and javascript files to our theme ,   Link google fonts and font awsome to our webiste:, add_action to functions.php file, Header and footer wordpress hooks,   
-Adding a post index to a page  ,  
-
-Adding theme support  ,  
-Custom Post Type  ,  
-
-Adding theme support , featured image , title tag feature , html5 theme support , BACK TO CUSTOM POST TYPE , Wordpress Templates ,  Adding a list of posts to your index.php page  ,  Adding a single post page  , Adding a front page ,  front-page.php  ,  Bring in you css, html and images , Updating header.php and footer.php files ,  Header and footer hooks ,   Importing header and footer files to front-page.php  ,  Menu links & other links  ,  Display post on front page , 
+Local,
+Adding a new post
+Adding a new pluggin
+Change websites Title and Tag line's
+ADD YOUR CUSTOM THEME
+Add your files to your theme
+Importing header and footer files 
+Address of new site 
+Link our css and javascript files to our theme 
+Link google fonts and font awsome to our webiste 
+Hooks for Header and footer files
+Adding a list of posts to your index.php page
+Adding theme support to posts
+Custom Post Type
+Wordpress Templates
+Adding a single post page
+Adding a front page  
+front-page.php 
+Bring in you css, html and images
+Updating header.php and footer.php files
+Header and footer hooks
+Importing header and footer files to front-page.php 
+Menu links & other links
+Display post list on front page , 
 ##############
 
 
@@ -189,29 +205,35 @@ We now need to add code to the header and footer files.
 
 
 Adding a list of posts to your index.php page  
-
 This uses a while loop. The condition is that 'while posts exist...'
 This is a page (index.php) that shows a list of posts available to click through to. IE, A list of posts you can choose from.
-
 The items involved here are:
 have posts, the post, the title, the excerpt and permalink. 
+The code for this can be found in git/php_wp/post_list as well as below.
+//The below code sits (usually) between the header and footer hooks on the page you wish to display your list of posts.
 
-The code for this can be found in git/php_wp/post_list
-
-
+<?php  
+	while(have_posts()) {  //The condition of the while loop is that posts exist.
+			the_post(); 
+   <a href="<?php the_permalink(); ?>" >
+		<h3><?php the_title(); //The h3 tags include embeded php code to output the post's titles?> </h3> </a>
+		<?php the_excerpt(); // The excerpt displays a short excerpt of the post.?>  	
+		<?php  //Amazingly, you need to open and close the php to accomodate the last curly brace to end the function.		
+			    }
+?>
 
 
 
 
 
 Adding theme support to posts
-This adds functionality to the default posts to include: post thumbnails, title tag, and html5 ,
-the post thumbnails functionality adds and option in admin to upload a desried image as your post's thumbnail.
-It goes into functions.php
+This adds functionality to the default 'posts' to include: post thumbnails, title tag, and html5 ,
+the post thumbnails functionality adds and option in admin to upload a desired image as your post's thumbnail.
+It goes into the functions.php file.
 function gr_init() {
-					add_theme_support('post-thumbnails');
-					add_theme_support('title-tag');
-					add_theme_support('html5',  array('comment-list' , 'comment-form' , 'search-form')); 
+		add_theme_support('post-thumbnails');
+		add_theme_support('title-tag');
+		add_theme_support('html5',  array('comment-list' , 'comment-form' , 'search-form')); 
 						}
 add_action('after_setup_theme', 'gr_init');
 
@@ -221,17 +243,25 @@ add_action('after_setup_theme', 'gr_init');
 
 
 
+
 Custom Post Type 
-Here you are creating your own custome post type. 'post' is the default already available in the wp admin area. This custom post type will be added somewhere below it (on the admin page left menu).
+Here you are creating your own custome post type. 'post' is the default already available in the wp admin area. This custom post type (that you named 'Project') will be added somewhere below it (on the admin page left menu).
 This code is also available in custom_post_type.c
 //register_post_type creates a new menu item in admin and allows you to create multiple projects as required. 
-	//slug is the part of your URL that you can edit when writing or editing a post
-	//Lables (Names) for each following item.
-	//name = Name of the item on the admin menu
-	//menu icon : add an icon for our post type (found at developer.wordpress.org  put dashicons into the searchbar to search through the different icons.
+//slug is the part of your URL that you can edit when writing or editing a post
+//Lables (Names) for each following item.
+//name = Name of the item on the admin menu
+//menu icon : add an icon for our post type (found at developer.wordpress.org  put dashicons into the searchbar to search through the different icons.
 	//'public' Make this custom post type public. This can be kept private ie if it is only for admin.
 	//'has_archive' Allows you to filter by date, author, categories etc
-	// 'supports' What should be supported by this custom post type. (Items it will enable)
+	// 'supports' What should be supported by this custom post type. (Items it will enable). Thumbnails are included here and it is important to note that 'post thumbnails' need to be set globally (above) in order for thumbnails to be enabled in this custom post type, even though you have  'supports'  => arrray (...'thumbnail'... ) below. (Ie: you still needd to set it globally for it to work).
+	
+So in your case, you created a custom post type named 'projects'. The code for how to list these are also in the post_list file. These require variables with arrays in the functions.php file.
+The main items here are $args (a variable with and array), a second variable that takes the first variable as a WP_Query argument, a while loop, with have posts, post-of-choice (in my case, 'the post' or 'project') and posts per page. 
+
+Finally, we have permalink, the title and the excerpt
+
+	SO HERE IS THE CODE for the functions.php file.
 function gr_custom_post_type(){
 	register_post_type('project', 
 			    array('rewrite' => array('slug' => 'projects'),
@@ -247,15 +277,11 @@ function gr_custom_post_type(){
 			      }//function end
 add_action('init' , 'gr_custom_post_type'); //final step is to add an action to run this function
 ?>
+//In addition to the code above, you also need to add code to the page you want to display your custom post list.
+//The code for this is below after 
 
 
 
-2.24 in
-
-
-
-
-STOPPED HERE	
 	
 
 
@@ -292,63 +318,6 @@ So if you now add a page via the wp admin, it should be served up by page.php (i
 
 
 
-Adding a list of posts to your index.php page  
-
-This uses a while loop. The condition is that 'while posts exist...'
-This is a page (index.php) that shows a list of posts available to click through to. IE, A list of posts you can choose from.
-
-The items involved here are:
-have posts, the post, the title, the excerpt and permalink. 
-
-The code for this can be found in git/php_wp/post_list
-
-
-
-
-
-Adding featured images and other functionality to your default posts:
-This code is set globally within your functions.php file
-function gr_init() {
-					add_theme_support('post-thumbnails');
-					add_theme_support('title-tag');
-					add_theme_support('html5',  array('comment-list' , 'comment-form' , 'search-form')); 
-						}
-add_action('after_setup_theme', 'gr_init'); 
-So, above is globally set. This means that future custom post types that your create will allow uploadable images, although you need to make sure you add this support in your custome code. (see below)
-
-stopped here
-
-Customised arguments
-You need to add code in functions.php if you want to display a different list of posts and/or set a specific number of posts per page and change the length of the post's exerpt etc.
-
-Adding 'featured-image/post thumbnail functionality to your posts. Ie: the ability to upload and image for your post.
-
-This requires 2 steps in cases where you create/register your own custom post type. If you are not doing this and instead just using the default 'posts', you need only do step 1;
-
-The first step is to set this functionality globably.
-Below is for the functions.php file.
-
-add_theme_support('post-thumbnails');
-This sets the functionality globally and not only needs to be in place for the default 'posts' but is also required for setting up your own custom post (below).
-
-
-And now you need to add it to your registered post type.
-'supports' => array('thumbnail' , 'editor' , .... )
-You input this into your register post type's parameters.
-
-So the first step is to 
-
-
-
-In your case, you created a custom post type named 'projects'. The code for how to list these are also in the post_list file. These require variables with arrays. 
-The main items here are $args (a variable with and array), a second variable that takes the first variable as a WP_Query argument, a while loop, with have posts, post-of-choice (in my case, 'the post' or 'project') and posts per page. 
-
-Finally, we have permalink, the title and the excerpt
-
-
-
-
-
 
 Adding a single post page
 If you click on any blog post from the blog post's index page, WordPress will take you to a page where you can read the entire blog post.
@@ -361,13 +330,29 @@ Items here are: have posts, the post, the title, the author, get the post thumbn
 Please bear in mind you need to upload a featured image via admin for the post thumb nail to display. Just click on the post and upload a featured image. Remember to 'Update' your post so the FI is properly added. 
 
 The code for this single post page is in git/php_wp/single_post.c
+AND HERE;
+<?php
+	while(have_posts()) {  //NB have_posts require comments
+		
+		the_post();
+?>
+		<h2> <?php the_title();?> </h2>
+		
+		Posted by <?php the_author(); ?>
+		
+		<img src= "<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" />
+		
+		<?php the_content(); 
+		      'the_comment_form()'; 
+
+		 } 	?>
 
 
 
 
 
 
-Adding a front page
+Adding a front page 
 site front page is very high up in the hierarchy so by creating a front-page.php, the site ,by default, will open in this page. Similar to the index.html in a static site.
 
 So now we are 'transferring' the static gtcoding site we created earlier on in the video course to this wordpress website we are creating.
@@ -394,10 +379,14 @@ Copy all your images over to a folder named img. (You may need to create this fo
 
 
 
+
+
 Updating header.php and footer.php files
 You are now beginning to move the relevant code over to the header and footer files you already created.
 So, move all the header code from the recently pasted code in front-pag.php, to the header.php file. In my case, this is all the code above the 'banner' tag.
 Do the same with the footer code by moving it from front-page.php to the footer.php file.
+
+
 
 
 
@@ -432,11 +421,41 @@ Menu links & other links
                 <a href="<?php echo site_url('/about') ;?>">About</a>
 		
 
-           
-Display post on front page
+
+
+
+
+Display post list on front page
+Now that you have important code from the static site to you wp site, you can now display your custom post list (or index) on your front-page.php.
 In your example, it sits within the 'section' ID
 Items for the image are: the_permalink, get_the_post_thumbnail_url
 Items for description are: the_permalink, the_title, trim_words(get_the_excerpt)
-
+HERE IS THE CODE 
+AND HERE IS THE CODE FOR THE POST LIST PAGE (Ie the index.php, front-page.php or any other page you wish your post list to be on.
+ <?php  
+  $args = array( 'post_type'  => 'project', 
+	 'posts_per_page' => 2 
+ );
+ $blogposts = new WP_Query($args);
+	while($blogposts -> have_posts()) {  //The condition of the while loop is that posts exist.
+	      $blogposts -> the_post(); 
+   }
+?>
+            <div class="card">
+                <div class="card-image">
+                    <a href="<?php the_permalink(); ?>" >
+                        <img src="<?php echo get_the_post_thumbnail_url('get_the_ID'); ?>"
+                    </a>
+                </div>
+                <div class="card-description">
+                    <a href="<?php the_permalink() ?> ">
+					<h3> <?php the_title(); ?> </h3>
+						</a>
+						<p> <?php echo wp_trim_words(get_the_excerpt(), 30); ?> </p>
+                    <a href="blogpost.html" class="btn-readmore">
+                        Read More
+                    </a>
+                </div>
+            </div>
 
 
