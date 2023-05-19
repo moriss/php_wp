@@ -150,22 +150,6 @@ We now need to link google fonts and font awsome to our webiste.
 2.20 in
 Before continuing at 2.20, refer to the 3.5_Adding_font_awsome file for more information in integrating font awesome into your wp site.
 
-	//Below is for google fonts
-	wp_enqueue_style('google_fonts', '//fonts.googleapis.com/css2?	family=Roboto+Condensed:ital,wght@1,300&family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap"');
-	
-	//Below is for font-awesome
-	wp_enqueue_style('font_awsome' , '//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"');
-
-add_action to functions.php file:
-The functions.php file requires the following code to 'action' its function named 'gt_setup'
-//Below refers to the function above named 'gt_setup'
-//Parameter 1 = when the function should be executed
-//parameter 2 = The name of the function
-add_action('wp_enqueue_scripts', 'gt_setup');
-
-
-
-
 function gr_setup(){
 	//Below is for google fonts
 	wp_enqueue_style('google_fonts', '//fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap"');
@@ -177,7 +161,6 @@ function gr_setup(){
 	wp_enqueue_style('style', get_stylesheet_uri(), NULL,  microtime(), 'all');
 	//parameter inputes:
 	//(Name of css file,    file destination, No dependencies in our css file,  Auto updates file after changes, device types supported)
-	
 	
 	//Below is to link your javascript file	
 	wp_enqueue_script("main", get_theme_file_uri('js/main.js'),  NULL,  microtime(),  true);
@@ -196,20 +179,26 @@ add_action('wp_enqueue_scripts', 'gr_setup');
 
 
 
-
-
-
-
-
-
-
-
-
-Header and footer wordpress hooks:
+Hooks for Header and footer files
 We now need to add code to the header and footer files.
 
 <?php wp_head();  ?> //A wordpress hook that needs to go within he header tags of the header file
 <?php wp_footer();  ?> //A wordpress hook that needs to go before the body closing tag of the footer file
+
+
+
+
+Adding a list of posts to your index.php page  
+
+This uses a while loop. The condition is that 'while posts exist...'
+This is a page (index.php) that shows a list of posts available to click through to. IE, A list of posts you can choose from.
+
+The items involved here are:
+have posts, the post, the title, the excerpt and permalink. 
+
+The code for this can be found in git/php_wp/post_list
+
+
 
 
 
