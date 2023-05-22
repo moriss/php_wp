@@ -21,14 +21,16 @@ Adding theme support to posts
 Custom Post Type
 Wordpress Templates
 Adding a single post page
+
 Adding a front page  
+
 front-page.php 
 Bring in you css, html and images
 Updating header.php and footer.php files
 Header and footer hooks
 Importing header and footer files to front-page.php 
 Menu links & other links
-Display post list on front page , 
+Display post list on front page 
 ##############
 
 
@@ -352,15 +354,36 @@ AND HERE;
 
 
 
-Adding a front page 
-site front page is very high up in the hierarchy so by creating a front-page.php, the site ,by default, will open in this page. Similar to the index.html in a static site.
+Adding a front page and a Blog page
+The site front page is very high up in the hierarchy so by creating a front-page.php, the site ,by default, will open in this page. Similar to the index.html in a static site.
 
-So now we are 'transferring' the static gtcoding site we created earlier on in the video course to this wordpress website we are creating.
+Go to Admin > pages > add new.  Call the title 'Home'.  Click 'publish'  
+Now go to Dashboard > settings > reading settings. 
+'Your homepage displays': Choose Static Page
+Home page drop-down: select 'Home'. 
+Now Save your settings
+Now this new page (as per the heirarchy) will look for a file called  front-page.php
 
+So 'site front page' named in the heirarchy image is the same as 'Home Page' in the Admin > Pages.
+It's as if 'site front page' looks to serve up code/data found in front-page.php file. 
+3.02 in
+stopped here
+Now create a blog page
+Admin > pages > add new.  Give the title as 'Blog' then Publish it
+Again, go back to Dashboard > settings > reading settings.
+Save your settings again.
+
+
+
+So now we are working through the process of 'transferring' the static gtcoding site we created earlier on in the video course to this wordpress website we are creating. So as above, first step is to add a front page via admin. 
+
+#####
+As a side not:
 The static site is located at: blue laptop > desktop > projects > wordpress > my wordpress site
 The wordpress website files are located at: home > local sites > grange > app > public > content > theme > grange
+#####
 
-So firstly we need to add a new page within admin, calling in 'Home'. Whilst you're at it, create another page called 'blog'. Just delete any sample pages you previously created (just to keep things neat and tidy)
+So firstly we need to add the  new page within admin, calling in 'Home'. Whilst you're at it, create another page called 'blog'. Just delete any sample pages you previously created (just to keep things neat and tidy)
 Now (from the admin dashboard) go to setting > reading. Change 'Your home page displays' drop down options to 'static page' and select 'Home' for the 'Home page' drop down option. Also select 'blog' for the 'post page' drop down option.
 
 front-page.php
