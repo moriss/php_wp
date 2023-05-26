@@ -19,17 +19,17 @@ Hooks for Header and footer files
 Adding a list of posts to your index.php page
 Adding theme support to posts
 Custom Post Type
-Wordpress Templates
+Wordpress Template Hierarchy
 Adding a single post page
 
 Adding a front page  
-
 front-page.php 
-Bring in you css, html and images
+Bring in you css, html and images (From a static  site)
 Updating header.php and footer.php files
 Header and footer hooks
 Importing header and footer files to front-page.php 
-Menu links & other links
+Menu links to replace static menu links
+Image Links to replace static image links
 Display post list on front page 
 ##############
 
@@ -200,8 +200,8 @@ add_action('wp_enqueue_scripts', 'gr_setup');
 Hooks for Header and footer files
 We now need to add code to the header and footer files.
 
-<?php wp_head();  ?> //A wordpress hook that needs to go within he header tags of the header file
-<?php wp_footer();  ?> //A wordpress hook that needs to go before the body closing tag of the footer file
+<?php wp_head();  ?> //A wordpress hook that needs to go within he header tags of the header.php file
+<?php wp_footer();  ?> //A wordpress hook that needs to go before the body closing tag of the footer.php file
 
 
 
@@ -289,7 +289,7 @@ add_action('init' , 'gr_custom_post_type'); //final step is to add an action to 
 
 
 
-Wordpress Templates ,
+Wordpress Template Hierarchy ,
 There are pre-determined templates that can serve up your content depending on how you want your layouts to look for certain pages. 
 
 Wordpress will search for specifically named files within the files you create. If you don't have these SN files then wordpress will simply serve up your content with the default index.php
@@ -394,7 +394,7 @@ Create a file in your website route (where you also have index.php, header, foot
 
 
 
-Bring in you css, html and images
+Bring in you css, html and images (From a static site)
 Paste all your css code from your static version of the site into the wp route folder's css file.
 Paste all your index.html code over to the newly created front-page.php
 Copy all your images over to a folder named img. (You may need to create this folder if not already done so)
@@ -419,15 +419,14 @@ Add this code to the closing body tag in footer.php
 <?php wp_footer(); ?> 
 This identifies the code as footer code.
 
-The header does something slightly differently.
 This code: <?php wp_head(); ?> to be placed in header.php, replaces all the 'link' tags [originaly in the index.html static site], related to css, font awsome, google fonts and js (which can now be grabbed from your functions.php file).
-So my understanding is that wp_head has two jobs. It identifies itself as header.php and also calls the link code from the functions.php file.
+This function acts as a hook to bring in (amongst other things) enqeue styles and scripts for linking css and javascript files.
 
 
 
 
 
-Importing header and footer files to front-page.php
+Importing header.php and footer.php files to front-page.php
 Refer to your pencilled code map for a better visual. Below is the code
 
 Add this to the top and bottom (respectively) of your front-page.php  file
@@ -437,48 +436,63 @@ Add this to the top and bottom (respectively) of your front-page.php  file
 
 
 
-Menu links & other links
+Menu links to replace static menu links
                 <a class="active" href="<?php echo site_url('') ;?>">Home</a>
                 <a href="<?php echo site_url('/blog') ;?>">Blog</a>
                 <a href="<?php echo site_url('/projects') ;?>">Projects</a>
                 <a href="<?php echo site_url('/about') ;?>">About</a>
 		
+Image Links to replace static image links
+		//This code is more speific to images
+		//Adding a logo to the header.php file
+		<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="grange">
+		//The first part   get_template_directory_uri();   goes to the route folder of your wordpress site. 
 
+
+		<img src="<?php echo get_the_post_thumbnail_url('get_the_ID'); ?>" 
+		//Gets your thumbnail image
 
 
 
 
 Display post list on front page
-Now that you have important code from the static site to you wp site, you can now display your custom post list (or index) on your front-page.php.
+Now that you have important code from the static site to you wp site, you can now display your custom post list/index on your front-page.php.
 In your example, it sits within the 'section' ID
 Items for the image are: the_permalink, get_the_post_thumbnail_url
 Items for description are: the_permalink, the_title, trim_words(get_the_excerpt)
-HERE IS THE CODE 
+
 AND HERE IS THE CODE FOR THE POST LIST PAGE (Ie the index.php, front-page.php or any other page you wish your post list to be on.
  <?php  
-  $args = array( 'post_type'  => 'project', 
-	 'posts_per_page' => 2 
+ //$args: An associative array variable that points to the 'project' post type you created before
+  $args = array( 'post_type'  => 'project', //Declares which post to display, 'post' or (my one)'project'
+	 'posts_per_page' => 2 //How many posts per page should be displayed
  );
- $blogposts = new WP_Query($args);
+ $blogposts = new WP_Query($args);//This variable ($blogposts) uses the above variable ($args) as an argument.
 	while($blogposts -> have_posts()) {  //The condition of the while loop is that posts exist.
-	      $blogposts -> the_post(); 
+	      $blogposts -> the_post(); //Display the post if true
    }
 ?>
             <div class="card">
                 <div class="card-image">
+		    //This creates a link around the thumbnail
                     <a href="<?php the_permalink(); ?>" >
+		    	//This grabs the thumbnail for each post
                         <img src="<?php echo get_the_post_thumbnail_url('get_the_ID'); ?>"
                     </a>
                 </div>
                 <div class="card-description">
+		    //THis creats a link around the title
                     <a href="<?php the_permalink() ?> ">
+		    			//This grabs the title for each post
 					<h3> <?php the_title(); ?> </h3>
 						</a>
+						//**This 'trims' the number of exerpts to (in this case) 30 words.
 						<p> <?php echo wp_trim_words(get_the_excerpt(), 30); ?> </p>
                     <a href="blogpost.html" class="btn-readmore">
                         Read More
                     </a>
                 </div>
             </div>
+//** Your post type must have 'excerpt' supported for this to work: ie  'supports' => array(... , 'excerpt' , ...)
 
 
