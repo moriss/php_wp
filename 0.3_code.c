@@ -25,3 +25,8 @@
 <img src="<?php echo get_the_post_thumbnail_url('get_the_ID'); ?>" //Gets your thumbnail image
 <?php echo wp_trim_words(get_the_excerpt(), 30); ?>//Trims the excerpt to 30 words
 
+wp_enqueue_style(... // In place of having <link> tags for linking stylesheets in the head section of a static page.
+                // the enqueue code is placed in the functions.php file.
+
+wp_enqueue_script(... // In place of having <script> tags for linking stylesheets to the head section of a static page
+                  // the enqueue code is placed in the functions.php file.
