@@ -6,3 +6,8 @@
 
 
 <img src="<?php echo get_the_post_thumbnail_url('get_the_ID'); ?>" //Gets your thumbnail image
+
+//A link around a thumbnail
+<a href="<?php the_permalink(); ?>" >
+<img src="<?php echo get_the_post_thumbnail_url('get_the_ID'); ?>"
+</a>
