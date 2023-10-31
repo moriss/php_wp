@@ -4,15 +4,15 @@ Initial Notes:
 The new boston might be the guy that taught me building a wordpress OR Joomla template before. You could also refer to his tutorials.
 
 So you have 2 wordpress folders. one you created yourself at: 
-desktop>projects>wordpress   Ths is the one you are using for the start of the course.
+desktop>projects>wordpress   Ths is the one you are using for the start of the course. 
 
 
-and the downloaded one at other locations>computer>opt>lampp>htdocs>wordpress
+and the downloaded one at: other locations>computer>opt>lampp>htdocs>wordpress
 You will migrate to this one when you start with php.
 
 
 Opening xampp 
-In order to begin working with php locally, you need to open xampp inside of htdocs. You have been doing this for the ealy part of the gtcoding course.  
+In order to begin working with php locally, you need to open xampp inside of htdocs. You have been doing this for the early part of the gtcoding course.  
 sudo ./manager-linux-x64.run
 
 
@@ -66,11 +66,11 @@ END OF FIRST MODULE
 
 STOPPED 12 MINS IN 7th feb 22
 
-You created a folder named 'my wp site' inside A-Z.wordpress to use for this course.
+You created a folder named 'my wp site' inside projects>wordpress to use for this course.
 
 STOPPED HERE
 
-
+31/10/23:You installed vscode direct from the website. Next step is to set your default browser to google chrome for the vscode live server feature
 Notes for vs code are in projects>site-styling>vs code
 #################################################################
 
