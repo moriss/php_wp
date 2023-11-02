@@ -68,9 +68,11 @@ STOPPED 12 MINS IN 7th feb 22
 
 You created a folder named 'my wp site' inside projects>wordpress to use for this course.
 
-STOPPED HERE
 
-31/10/23:You installed vscode direct from the website. Next step is to set your default browser to google chrome for the vscode live server feature
+31/10/23:You installed vscode direct from the website. 
+The vscode live server feature will work with your default laptop browser.
+
+
 Notes for vs code are in projects>site-styling>vs code
 #################################################################
 
@@ -89,6 +91,8 @@ Below message from site
 (Font Awesome CDN is the easiest way to get Font Awesome on your website or app, all with just a single line of code. No downloading or installing!)
 
 I was then redirected to this site to enter my email again.
+
+STOPPED HERE
 
 https://fontawesome.com/start
 marrocco001@gmail.com
@@ -114,16 +118,10 @@ Font awsome approx 16.13 in
 
 ~~~vs code
 Open Live server in visual studio code
-Open visual studio > Restricted (bottom left) >add folders to trust >  Open trusted folder inside vs > Open firefox from footer bar > click "go live"
-NB: Very important to open firefox before clicking on go live. If you don't, ff just keeps crashing.
+Open visual studio > Restricted (bottom left) >add folders to trust >  Open trusted folder inside vs > click "go live"
 
 When connected to the internet, the font awsome icons look like a broken image link.
 ~~~
-
-
-
-
-
 @@@@@
 
 
