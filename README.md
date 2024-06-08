@@ -3,6 +3,13 @@ Repo Contents:
 error notes  ,  XAMPP  ,  Early_GTCoding_Guide  ,  Early_GTCoding_Practice  ,  Local_WP  ,  * Custom_Theme_WP *  ,  Important  ,  code.c   ,  Boilerplate.c  ,  Adding_font_awsome  ,  include.php  ,  post_list.c  ,  single_post.c  ,  Admin_user_interface  ,  images.c  
 #########
 
+07.06.24
+So here we are again trying to pick up where we left off. Don't feel too bad since using chat with C and related programing languages has helped with this wordpress course.
+You are currently starting from the static site and in particular, trying to work out the html and css so you understand and downloading google fonts and font awsome so you can work locally. 
+
+Below here are important notes and information about working through this repo.
+@@@@@@@@@@
+
 
 Go straight to 0.2Custom_Theme_WP to work your way through the youtube course below. 0.2Custom_Theme_WP is a comprehensive guide that also refers to other files within this repo as you put your wordpress site together. You also have written material to run alongside these files.
 
