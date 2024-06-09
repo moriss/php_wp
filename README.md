@@ -4,10 +4,14 @@ error notes  ,  XAMPP  ,  Early_GTCoding_Guide  ,  Early_GTCoding_Practice  ,  L
 #########
 
 07.06.24
-So here we are again trying to pick up where we left off. Don't feel too bad since using chat with C and related programing languages has helped with this wordpress course.
-You are currently starting from the static site and in particular, trying to work out the html and css so you understand and downloading google fonts and font awsome so you can work locally. 
+So here we are again trying to pick up where we left off. Don't feel too bad since using chat with C and related programing languages will give you a deeper understanding of this course rather than just copying the tutor. You can ask questions along the way and thus increase your knowledge.
+You are currently starting from the static site and in particular, trying better understand the html and css. You also want to work with the static sight locally so you are currently trying to work out how to use google fonts and font awsome locally.
 
-Below here are important notes and information about working through this repo.  Also using chat : local font usage guide.
+Files you are working on for above are in blue/Projects/Wordpress/my wp website 0624.
+Also using chat : local font usage guide.
+
+Below here are important notes and information about working through this repo. 
+stopped at: 
 @@@@@@@@@@
 
 
