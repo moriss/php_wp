@@ -2,6 +2,14 @@
 Repo Contents: 
 error notes  ,  XAMPP  ,  Early_GTCoding_Guide  ,  Early_GTCoding_Practice  ,  Local_WP  ,  * Custom_Theme_WP *  ,  Important  ,  code.c   ,  Boilerplate.c  ,  Adding_font_awsome  ,  include.php  ,  post_list.c  ,  single_post.c  ,  Admin_user_interface  ,  images.c  
 #########
+configure nano settings to wrap text automatically when opening a file in
+terminal. 
+
+Create a file called nanorc
+nano ~/.nanorc
+Add the wrap setting
+set softwrap
+Save it (ctrl o) Then open  a file in nano to test it. 
 
 07.06.24
 So here we are again trying to pick up where we left off. Don't feel too bad since using chat with C and related programing languages will give you a deeper understanding of this course rather than just copying the tutor. You can ask questions along the way and thus increase your knowledge.
