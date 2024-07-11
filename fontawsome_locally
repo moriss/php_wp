@@ -1,0 +1,73 @@
+Working with fontawsome icons locally
+
+Important! You need to clear your browser's cache each time you test anything. You didn't do this to start with which gave you misleading results.
+
+This is primarily to use the fontawsome icons in your web project.
+
+
+
+QUICK SETUP	
+@@@
+So firstly paste the font-awsome downloaded files into your project (same level as your html) and rename the file something easy like assets_fa.
+
+Go to your html and link the relevant css file.
+I suggest all.min.css found in assets_fa/css
+
+You have a main.js script you wrote in the wp course you were following. Make sure it is at the bottom of your html file before the closing body tag. This toggles the mobile menu when you click on the bars icon.
+
+You can also include the all.min.js file in assets_fa/js but I don't think it does anything. You already have your custom main.js file.
+
+There are many files you don't need and it's probably best to delete stuff you don't need. Bear in mind, when your site goes live, it is best to link to the fontawsome site rather than keeping all those fa file locally. 
+@@@
+
+
+MORE READING:
+Download the fontawsome files from the font awsome website
+
+Extract them
+
+Find the icons you want to use and copy them over to your project as follows:
+Create an 'assets...' folder with a useful ending (eg 'assets_fa' for font awsome assets) then replicate the same file structure (as the download). This helps with finding future icons (as you mirror the fontawsome downloaded file structure everything will be easier to find). YOU CAN EITHER DO THIS OR JUST RENAME THE EXTRACTED FILES TO SOMETHING EASY LIKE ASSETS_FA WHICH IS QUICKER.
+
+The assets_fa folder should be in the same folder as your html files.
+
+In my current case as I write this, I have assets_fa>svgs>solid>bars.svg
+
+Now the same as above for the relevant css files. I chose all.min.css since I am unsure what exactly I need since a css file refers to svg-with-js.min.css. So I'll just be safe and go for all.min
+
+Now for the js files. Although I was tempted to go for solid.min.js, I just went for the full all.min.js to be on the safe side. WHEN YOU DELETED THE LINK TO THIS JS FILE (WITHIN YOUR INDEX.HTML, IT DIDN'T AFFECT ANYTHING, SO IT SEEMS USELESS)
+
+
+
+Next step is linking the css and js files to your html. 
+<link rel="stylesheet" href="assets_fa/css/all.min.css"/>
+<script src="assets_fa/js/all.min.js" crossorigin="anonymous"></script>I DON'T THINK THIS JS IS REQUIRED
+
+
+Before moving onto the bars.svg icon I need to explain something. 
+In the css provided by fontawsome, there is a "\f0c9" which is the icon font for bars. So you don't need to therefore display the icon as an image (<img src="">). These are two separate things. Either use the icon font coded as \f0c9 or insert the image into your html with the img tag. But don't do both. I PROVED THIS BY DELETING THE SVG FILE AND AFTER CLEARING THE BROWSER CACHE, THE ICON WAS STILL PRESENT AND FUNCTIONING AS NORMAL.
+
+fa-bars is the class name in the all.min.css.
+And here is the full strip of code in the all.min.css
+fa-bars:before,.fa-navicon:before{content:"\f0c9"}
+The 'before' just means to place the icon before any content. 
+
+STOPPED HERE
+
+Chat told me that \f0c9 is the code for the bars image. 
+ fa-bars:before,.fa-navicon:before{content:"\f0c9"} which is located at 
+ 
+ The below summary -NOW DELETED- is subsequently found to be false. 
+ When I cleared my browser cache -suggested by chat- the icon disapeared. UPDATED INSTRUCTIONS ARE ABOVE.
+
+ 
+ 
+ 
+    
+    
+    
+
+
+
+
+

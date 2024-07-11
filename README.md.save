@@ -1,0 +1,69 @@
+#########
+Repo Contents: 
+error notes  ,  XAMPP  ,  Early_GTCoding_Guide  ,  Early_GTCoding_Practice  ,  Local_WP  ,  * Custom_Theme_WP *  ,  Important  ,  code.c   ,  Boilerplate.c  ,  Adding_font_awsome  ,  include.php  ,  post_list.c  ,  single_post.c  ,  Admin_user_interface  ,  images.c  
+#########
+
+
+07.06.24
+So here we are again trying to pick up where we left off. Don't feel too bad since using chat with C and related programing languages will give you a deeper understanding of this course rather than just copying the tutor. You can ask questions along the way and thus increase your knowledge.
+You are currently starting from the static site and in particular, trying better understand the html and css. You also want to work with the static sight locally so you are currently trying to work out how to use google fonts and font awsome locally.
+
+Files you are working on for above are in blue/Projects/Wordpress/my wp website 0624.
+Also using chat : local font usage guide.
+
+Below here are important notes and information about working through this repo. 
+stopped at: 
+@@@@@@@@@@
+
+
+Go straight to 0.2Custom_Theme_WP to work your way through the youtube course below. 0.2Custom_Theme_WP is a comprehensive guide that also refers to other files within this repo as you put your wordpress site together. You also have written material to run alongside these files.
+
+This repo is initially based on the wordpress/php tutorial on youtube https://www.youtube.com/watch?v=KibbYf9avko&t=43s  aka GTCoding
+If you click on 'show more' under the video it gives you all the time-lines for each area of the course. Very handy!
+The video comes from freeCodeCamp.org
+
+##Update 24th January 23
+This guy seems to cover alot with wordpress and introduced me to using a child site to add font awsome icons.
+His videos could be very useful. Below is one of them.
+https://www.youtube.com/watch?v=U323QLDy3bQ&t=44s
+
+Read below if you have been away from this for while.
+
+I'm using it as a way to introduce myself to wordpress templates whilst dabbling more into php
+
+The main goals are to get familiar with building wordpress themes easily and then get comfortable making user-side updates etc so I can show potential customers how to get the most from their wordpress site. 
+
+7th December 2022
+I am working through the course mainly using and updating the 0.2Custom_Theme_WP  file.
+I am 2.16 into the course.
+
+If you have been away from this course for a time, It may be best to re-start earlier on where 'Local' (0.1_Local_WP) is introduced, around 1.58 in, just to familiarise yourself with what you have been doing leading up to adding your own theme. 
+
+Local is an alternative to using xampp to insall wordpress. I'm using local in this instance because the course above does. (A file in the Ubuntu repo shows you how to download software onto the ubuntu linux platform)
+
+Early Part of the Course:
+During the early stages of this course I used xampp to practice general php exercises and created code files along the way for reference. If you have been away from this course for a while, you should go over the php code in the two following files:
+
+0.01Early_GTCoding_Guide: Contains general notes as I worked my way through the initial stages of the course up to the php exercises.
+
+0.02Early_GTCoding_Practice:  Contains alot of introductory php code for your reference
+
+A note to myself. 
+I have various files in blue laptop>projects>wordpress   and   htdocs  that are relevant to this course. Particularly dashboard.php which deals with forms.
+I don't really need them at the moment moving forward since I am now using 'local' to run wordpress (locally) to ultimately create my own wordpress theme. So everything relating to this course, from now on, can be found on this repo. Although this is open to change/correction where I am free to delve back into past work anywhewre I see fit. 
+
+
+
+
+FILES with explanations
+0.014_error_notes (Errors with pasted error message here, + fixes)
+0.015XAMPP  (Installing xampp)
+0.01Early_GTCoding_Guide (Pre Wordpress Section)
+0.02Early_GTCoding_Practice (PHP code for early part of course pre wordpress)
+0.1_Local_WP (Installing wordpress using 'Local') 
+0.2Custom_Theme_WP  (Adding a theme +) 
+0.3Boilerplate.c (Shows contents of wp files)
+3.include.php (Explanation and code for wp's "include")
+
+
+GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
