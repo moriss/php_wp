@@ -2,19 +2,42 @@
 Repo Contents: 
 error notes  ,  XAMPP  ,  Early_GTCoding_Guide  ,  Early_GTCoding_Practice  ,  Local_WP  ,  * Custom_Theme_WP *  ,  Important  ,  code.c   ,  Boilerplate.c  ,  Adding_font_awsome  ,  include.php  ,  post_list.c  ,  single_post.c  ,  Admin_user_interface  ,  images.c  
 #########
+At: 0.01Early_GTCoding_Guide.
+########
+QUICK VIEW: You have created a'static_site' directory in your php_wp repo to begin analysing the html, css and javascript portion.
+Below is the gtcoding tutorial. The course is made up of multiple videos.
+https://www.youtube.com/watch?v=YUI6biHYjUk&list=PL0-e1OMq5RP4LVmPKRljF5vAU3-Jx3yWQ&index=2
+
+Before you start worrying about creating easy to follow instructions, You really just want to be able to be competent and creating these wordpress sites as a starting point. 
+
+Where you are just now is your own php_wp git repo in htdocs.
+As you work through the course using the notes and referencing the video :
+You have 2 wordpress folders. 
+1. One you created yourself at:
+desktop/projects/wordpress
+This is the one you are using for the start of the course for html/css and javascript.
+The desktop/projects/wordpress/my_website_0624 is the version that has the locally installed google fonts and font awsome, so lets use this one as youcan work on it offline.
+
+
+2. And the official downloaded one at: other locations>computer>opt>lampp>htdocs>wordpress
+You will migrate to this one when you start with php.
+
+
+
+
+
 16th july 24
 I'm starting back at
 0.01Early_GTCoding_Guide
 to familiarise myself with the beginning of the course.
 
 07.06.24
-So here we are again trying to pick up where we left off. Don't feel too bad since using chat with C and related programing languages will give you a deeper understanding of this course rather than just copying the tutor. You can ask questions along the way and thus increase your knowledge.
-You are currently starting from the static site and in particular, trying to better understand the html and css. You also want to work with the static sight locally so you have created three files giving instructtions on how to do use fontawsome locally, remotely and a third file shows you how to use google fonts both remotely and locally. These files are in google drive/AAAcoding
+You are currently starting from the static site and in particular, trying to better understand the html and css. You also want to work with the static sight locally so you have created three files giving instructtions on how to use fontawsome locally, remotely and a third file shows you how to use google fonts both remotely and locally. These files are in google drive/AAAcoding. You have also moved this repo to the htdocs directory which means you can use xampp for php so you don't need to donwload local (and use up even more memory).
 
 
 Files you are working on for above are in blue/Projects/Wordpress/my wp website 0624.
 
-Below here are important notes and information about working through this repo. 
+Below here are important notes especially if you have been away from this for a while. It contains information about working through this repo. 
 
 @@@@@@@@@@@@@@@@
 

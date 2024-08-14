@@ -1,0 +1,23 @@
+<!DOCTYPE htl>
+<!---A Viewport is displayed as height:100vh (viewport height).
+It encompasses all the elements inside it (.port).
+
+It does NOT encompass block elements outside of it, unless you change them to inline elements. with float:left----->
+<head>
+<style type="text/css">
+h1 {float:left;}
+.port {border:1px solid red; height:100vh;}
+</style>
+</head>
+
+<body>
+<h1>Viewport</h1>
+<div class="port">
+<h2>Viewport</h2>
+<ul>
+<li>One</li>
+<li>Two</li>
+<li>Three</li>
+</ul>
+</div>
+</body>
