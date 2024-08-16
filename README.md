@@ -4,7 +4,7 @@ error notes  ,  XAMPP  ,  Early_GTCoding_Guide  ,  Early_GTCoding_Practice  ,  L
 #########
 At: 0.01Early_GTCoding_Guide.
 ########
-QUICK VIEW: You have created a'static_site' directory in your php_wp repo to begin analysing the html, css and javascript portion.
+QUICK VIEW: You have created a'static_site' directory in your php_wp repo to begin analysing the html, css and javascript portion in blue/Desktop/projects/wordpress/my wp website 0624
 Below is the gtcoding tutorial. The course is made up of multiple videos.
 https://www.youtube.com/watch?v=YUI6biHYjUk&list=PL0-e1OMq5RP4LVmPKRljF5vAU3-Jx3yWQ&index=2
 

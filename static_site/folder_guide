@@ -1,0 +1,17 @@
+The purpose of this is to break down css rules and try to understand exactly how they work. It's not really a quick look up guide but rather a good read to try and improve background knowledge. It might be a good idea to use a quick look up reference in google drive when putting sites together. 
+
+A usefule resource is Desktop/CSS FLEX/A complete guide to......
+
+My intention here is, where I want to show how things look in the browser, especially Where a larger combination of rules are required, they are saved as .html. 
+
+Non html files are reserved for more of a list layout of css rules with explanations. 
+
+Where a larger combination of rules are required, they will also be in a .html.
+
+
+
+background.html: A basic background colour and background image using html shorthand code. Image winds!
+
+background_image.html: Shows the full-length code version for background.html
+
+background_image_2.html: Psuedo elements, to lay the colour 'over' the image and create transparancy to see the image through the transparent background colour.
