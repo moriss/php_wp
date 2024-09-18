@@ -8,7 +8,7 @@ QUICK VIEW: You have created a'static_site' directory in your php_wp repo to beg
 Below is the gtcoding tutorial. The course is made up of multiple videos.
 https://www.youtube.com/watch?v=YUI6biHYjUk&list=PL0-e1OMq5RP4LVmPKRljF5vAU3-Jx3yWQ&index=2
 
-Before you start worrying about creating easy to follow instructions, You really just want to be able to be competent and creating these wordpress sites as a starting point. 
+Before you start worrying about creating your own easy to follow instructions, You really just want to be able to be competent at creating these wordpress sites as a starting point. 
 
 Where you are just now is your own php_wp git repo in htdocs.
 As you work through the course using the notes and referencing the video :
