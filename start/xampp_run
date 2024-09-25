@@ -1,0 +1,15 @@
+Instructions on How To Run Xampp
+
+Start xampp 
+cd /opt/lampp
+Now run xampp with:
+sudo ./manager-linux-x64.run
+
+Although you run the above (located in lampp), http://localhost is the htdocs file. S htdocs is the route for the filepath of the php file you wish to open.  
+
+When opened, go to manage servers and start all 
+
+To open a file inside htdocs :
+http://localhost/path to file or just filename
+
+

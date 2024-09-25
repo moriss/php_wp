@@ -1,0 +1,17 @@
+For a fuller read: chatgpt Viewport vs Screensize
+
+height:100vh; Viewport height. The viewport is the visible area of the web page within the browser window. This rule sets the vieport height to 100%.
+
+background:rgba(0,0,0,0.2) url('img/image2.jpg'); :
+
+You can however use pseudo code to have the colour on top and transparant so the colour filters down onto the image. see: Background_transparancy.html
+
+
+background-size:cover; :This adjusts the size of the image according to the viewport size whilst maintaining theimage's aspect ratio.
+
+
+background-attachment:fixed;
+background-position:center;
+background-blend-mode:overlay;
+color:white;
+border:3px solid red;

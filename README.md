@@ -4,25 +4,35 @@ error notes  ,  XAMPP  ,  Early_GTCoding_Guide  ,  Early_GTCoding_Practice  ,  L
 #########
 At: 0.01Early_GTCoding_Guide.
 ########
-QUICK VIEW: You have created a'static_site' directory in your php_wp repo to begin analysing the html, css and javascript portion in blue/Desktop/projects/wordpress/my wp website 0624
-Below is the gtcoding tutorial. The course is made up of multiple videos.
+25september24
+You have made some updates to make it easier to find resources. You decided the most important thing is to make it as easy as possible to self learn effectively rather than trying to create a resource for others. 
+
+So you have blue/desktop/AAll for code you can grab as you build a site and All_wp_0624 to work throught the static element of the wordpress course. 
+
+You have created a 'static_site' directory in your php_wp repo to begin analysing the html, css and javascript portion in blue/Desktop/projects/wordpress/my wp website 0624.
+
+Below can be checked at a later date but above is enough to be getting on with. 
+
+This is the gtcoding tutorial.
 https://www.youtube.com/watch?v=YUI6biHYjUk&list=PL0-e1OMq5RP4LVmPKRljF5vAU3-Jx3yWQ&index=2
 
-Before you start worrying about creating your own easy to follow instructions, You really just want to be able to be competent at creating these wordpress sites as a starting point. 
+Quick Setup: 
 
-Where you are just now is your own php_wp git repo in htdocs.
+Where you are just now is your own php_wp git repo in htdocs. It needs to be in htdocs so you can run xampp for the php code you will be using. 
+Instructions on how to start xampp are in start/xampp_run
+
 As you work through the course using the notes and referencing the video :
-You have 2 wordpress folders. 
+You have 3 wordpress folders. 
 1. One you created yourself at:
 desktop/projects/wordpress
 This is the one you are using for the start of the course for html/css and javascript.
-The desktop/projects/wordpress/my_website_0624 is the version that has the locally installed google fonts and font awsome, so lets use this one as youcan work on it offline.
+The desktop/projects/wordpress/my_website_0624 is the version that has the locally installed google fonts and font awsome so you can work on it offline.
 
 
-2. And the official downloaded one at: other locations>computer>opt>lampp>htdocs>wordpress
+2. The official downloaded one at: other locations>computer>opt>lampp>htdocs>wordpress
 You will migrate to this one when you start with php.
 
-
+3.php_wp repo in htdocs: This is the actual repo used for the course. Here you can organise your notes better and play around with php.
 
 
 
